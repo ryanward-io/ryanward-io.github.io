@@ -2,7 +2,7 @@
 layout: post
 title: Probability and accessibility in Catan
 date: 2021-07-17
-summary: Integrating statistics into gameplay
+summary: Integrating statistics into gameplay.
 categories: python statistics accessibility
 ---
 

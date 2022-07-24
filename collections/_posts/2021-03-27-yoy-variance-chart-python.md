@@ -6,9 +6,12 @@ summary: Finale of the year-on-year trilogy.
 categories: visualisation python
 ---
 
-This is part 3 in a series on charting year-on-year variance. I previously explained how to make a year-on-year chart with variance in Excel.
+This is part 3 in a series on charting year-on-year variance. The others are:
 
-This is a similar tutorial but in Python. This notebook is also in a [github repo here](https://github.com/ryanward-io/year-on-year-variance).
+- [Analysing a year-on-year chart]({% post_url /collections/2020-09-06-yoy-variance-grattan %})
+- [Making a year-on-year chart in Excel]({% post_url /collections/2020-10-12-yoy-variance-chart-excel %})
+
+This is a brief tutorial on creating a year-on-year chart with variance in Python. This notebook is also in a [github repo here](https://github.com/ryanward-io/year-on-year-variance).
 
 ### Starting with importing libraries and the data
 

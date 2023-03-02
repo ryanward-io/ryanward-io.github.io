@@ -1,0 +1,17 @@
+---
+layout: post
+title: On ethical eating
+date: 2022-11-14
+summary: What you choose to eat matters.
+categories: ethics vegetarianism
+---
+
+Vegetarianism is a lifestyle choice that is growing in popularity as more people become aware of the ethical, environmental, and health implications of consuming meat. Here I quickly cover the three main arguments I consider in my ethical eating which I've followed now for about a decade.
+
+**Utilitarian Liberalism** posits that global suffering should be reduced in accordance with the do no harm principle. Part of doing the most good, which ethical actors tend to be interested in, means reducing suffering. Animals suffer immensely as part of our food production cycle and reasons we inflict that suffering like it tastes good or it's convenient aren't satisfactory for outweighing the harm done. Given the viable alternative in vegetables and non-meat proteins, it is unethical to consume meat. A favourite author of mine, Peter Singer, has books like Animal Liberation which especially focus on this argument.
+
+**Climate change** is a pressing concern for the planet, so even if you didn't care about animal suffering, you should take a selfish interest in reducing the impacts of climate change to reduce the direct negative impacts it will have on your life. Reducing meat intake (particularly red meat) is one of the simplest things you can do to reduce your personal carbon footprint. It's worth noting even if you don't believe in climate change, you may care about environmental issues such as deforestation, water pollution, and the depletion of natural resources such as fresh water and topsoil all of which are worsened by animal farming and subsequent meat consumption.
+
+**Personal health** is also a compelling reason to reduce or remove meat from your diet. You'll consume fewer saturated fats and more fiber, and be less prone to common diseases and issues like heart disease, diabetes and high blood pressure. It's important to ensure you are still getting enough protein, calcium, iron, B12 and other micronutrients but this can be done by paying attention to your food, something worth doing even without reducing meat intake. Before long it becomes second nature to ensure a wide variety of nutritious foods like green, leafy vegetables and lentils are more commonly included in your diet. I'll add that I'm aware some people for medical reasons find they have severe adverse effects when eliminating meat from their diet. While I'm somewhat skeptical of the extent of this, this shouldn't prevent someone from reducing their meat intake slowly until eventually they are only having meat once or twice a week (or even less) depending on their medical needs.
+
+There are plenty of sources for all of these points, and if you have doubts about any area, it could be a fruitful area for friendly discussion. I'm aware you could probably cherry pick the science out of your way of any of these as well - making an argument isn't as clearcut as it used to be. Ultimately I think these three arguments also work independently so if you were neutral on one, the others still hold. No matter where you are at on ethical eating, hopefully some of the arguments here make you consider a further change.

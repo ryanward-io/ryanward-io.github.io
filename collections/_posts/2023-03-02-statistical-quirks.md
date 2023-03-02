@@ -3,7 +3,7 @@ layout: post
 title: Statistical quirks
 date: 2023-03-02
 summary: Looking at some of the oddities in statistics
-categories: working travel
+categories: statistics
 mathjax: true
 ---
 
@@ -38,15 +38,15 @@ For example, for a city, you may be interested in the percentage of vegetarians.
 
 To obtain sample size, you can rearrange this to be:
 
-$ {CI \over z}^2 = {p(1-p) \over n} $
+$${CI \over z}^2 = {p(1-p) \over n}$$
 
-$ n = {z^2p(1-p) \over CI^2}$
+$$n = {z^2p(1-p) \over CI^2}$$
 
 So for our example it may be:
 
-$ n = \frac{1.96^2*0.5*0.5}{0.05^2} $
+$$n = \frac{1.96^2*0.5*0.5}{0.05^2}$$
 
-$ n = 385 \text{ sample size.} $
+$$n = 385 \text{ sample size.}$$
 
 Using 0.5 is the most conservative estimate for the proportion, if it were 0.1 instead (10% vegetarians) you would get 139 sample size. This is also known as Cochrane's method, and perhaps not an oddity but something I found interesting.
 

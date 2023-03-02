@@ -21,7 +21,7 @@ While the ethics of eating animals like cows and chickens are largely settled fo
 
 ### Lab-Grown Meat
 
-Lab-grown meat has been hailed as a potential solution to the ethical and environmental issues surrounding traditional meat production. But there are ethical considerations even in this area. I'd want to be sure that this solution wasn't creating more environmental issues than it were solving, even if it were reducing animal suffering. There are also ethical questions around the taking of cells from animals without their knowledge or consent to create these meat products ([for a human analogy on this moral failure see the case of Henrietta Lacks](https://en.wikipedia.org/wiki/Henrietta_Lacks)?
+Lab-grown meat has been hailed as a potential solution to the ethical and environmental issues surrounding traditional meat production. But there are ethical considerations even in this area. I'd want to be sure that this solution wasn't creating more environmental issues than it were solving, even if it were reducing animal suffering. There are also ethical questions around the taking of cells from animals without their knowledge or consent to create these meat products ([for a human analogy on this moral failure see the case of Henrietta Lacks](https://en.wikipedia.org/wiki/Henrietta_Lacks)).
 
 
 ### The Fate of Farmed Animals

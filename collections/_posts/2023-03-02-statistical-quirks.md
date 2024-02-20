@@ -2,7 +2,7 @@
 layout: post
 title: Statistical quirks
 date: 2023-03-02
-summary: Looking at some of the oddities in statistics
+summary: Looking at some of the oddities in statistics.
 categories: statistics
 mathjax: true
 ---

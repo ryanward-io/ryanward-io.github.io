@@ -1,7 +1,7 @@
 ---
 layout: post
 title: One of the best days
-date: 2024-07-02
+date: 2024-05-02
 summary: A bit of structure through COVID
 categories: personal
 mathjax: true

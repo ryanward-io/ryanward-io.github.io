@@ -13,7 +13,7 @@ While analysis and machine learning has been interesting, the underlying archite
 
 I'm leaning more into the open source community and looking to contribute more often both through github and meetups. I want to plan this more deliberately but my feel is that I'll aim to connect more closely with the Melbourne data community, and also restart volunteering now that I've handed on the great work of [Empowered Together](https://empoweredtogether.com.au) to a new team. I've dipped my toes back in by connecting with housing-focused communities to tackle housing abundance which has been eye-opening.
 
-I've also recently completed some formal postgraduate education in [statistics](https://www.swinburne.edu.au/study/course/Graduate-Certificate-of-Applied-Statistics-GC-APPS/local). However I am always looking to better describe the underlying mechanics and (ir)regularities of complex systems found in business and, everywhere. 
+I've also recently completed some formal postgraduate education in [statistics](https://www.swinburne.edu.au/study/course/Graduate-Certificate-of-Applied-Statistics-GC-APPS/local). However I am always looking to better describe the underlying mechanics and (ir)regularities of complex systems found in business and, well, everywhere. 
 
 <style>
 .post-header{

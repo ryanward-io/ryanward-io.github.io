@@ -2,7 +2,7 @@
 layout: post
 title: Solving for misogyny in young people
 date: 2025-07-01
-summary: 
+summary: Thinking long term rather than quick punishments
 categories: geospatial
 mathjax: true
 ---

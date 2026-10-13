@@ -19,6 +19,10 @@ layout: compress
       document.querySelectorAll("pre").forEach(function (el) {
         if (el.scrollWidth > el.clientWidth) el.tabIndex = 0;
       });
+      /* Pandas tables have a blank index header; give it a screen-reader label */
+      document.querySelectorAll("th:empty").forEach(function (th) {
+        th.innerHTML = '<span class="sr-only">Index</span>';
+      });
     </script>
   </body>
 </html>

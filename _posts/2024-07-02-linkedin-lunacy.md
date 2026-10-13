@@ -3,7 +3,6 @@ layout: post
 title: LinkedIn lunacy
 date: 2024-07-02
 description: Or how to justify having a personal life to your colleagues
-categories: professional linkedin
 redirect_from:
   - /collections/professional/linkedin/2024/07/02/linkedin-lunacy/
 ---

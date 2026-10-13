@@ -3,7 +3,6 @@ layout: post
 title: Connecting to Pendo using Python
 date: 2020-07-05
 description: Let's get the data in your own hands.
-categories: product python
 redirect_from:
   - /collections/product/python/2020/07/05/connecting-to-pendo-python/
 ---

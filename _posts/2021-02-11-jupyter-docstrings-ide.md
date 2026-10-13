@@ -3,7 +3,6 @@ layout: post
 title: Jupyter - Seeing docstrings in your jupyter
 date: 2021-02-11
 description: You don't know what you don't know.
-categories: jupyter productivity
 redirect_from:
   - /collections/jupyter/productivity/2021/02/11/jupyter-docstrings-ide/
 ---

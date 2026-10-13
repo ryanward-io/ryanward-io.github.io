@@ -3,7 +3,6 @@ layout: post
 title: Solving for misogyny in young people
 date: 2025-07-01
 description: Thinking long term rather than quick punishments (repost from 2019)
-categories: sexualassault
 redirect_from:
   - /collections/geospatial/2025/07/01/misogyny-youth/
 ---

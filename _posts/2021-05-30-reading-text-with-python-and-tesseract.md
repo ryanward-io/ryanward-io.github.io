@@ -3,7 +3,6 @@ layout: post
 title: Reading text in images with Python and Tesseract
 date: 2021-05-30
 description: This is just an intro to get you started.
-categories: python ocr tesseract
 redirect_from:
   - /collections/python/ocr/tesseract/2021/05/30/reading-text-with-python-and-tesseract/
 ---

@@ -3,31 +3,18 @@
 Running log of quirks found while modernising the site. Status: `open` (not yet fixed), `fixed`, or `decision` (needs a call).
 
 ## Open / decisions
-- **open** Dead/unverified links in `2025-07-01-esex-law.md`: `dailylife.com.au` article no longer resolves (domain gone); `bom.gov.au` and `austlii.edu.au` links return 403 to bots so I couldn't verify them; the Palgrave link is a 2015 product page that now redirects somewhere generic. Consider archive.org links.
-- **open** The Excel post (`2020-10-12-yoy-variance-chart-excel.md`) alt text was written from the surrounding text, not from viewing the images; worth a glance.
-- **open** Post footer "Follow me on Github" link looks faintly styled (Phase 4 check).
-- **open** `collections/_drafts` has two untracked drafts (ignored for now at your request).
-- **open** `categories` no longer affect URLs, only the keywords meta tag; consider dropping or switching to `tags`.
-- **open** Your WIP parenting post (`_posts/2025-11-10-parenting-and-social-media.md`) is untracked; its `redirect_from` points at the old `/collections/...` URL, which is harmless but unneeded since it was never published at that URL. Remove it before publishing.
-
 - **open** Sass deprecations are silenced in `_config.yml` (theme uses `@import`, `darken()` and global builtins). Migrate to `@use`/`color.adjust` before Dart Sass 3.0 removes them.
-- **open** `/feed.xml` is now an Atom feed (jekyll-feed) instead of hand-written RSS 2.0; same URL, subscribers should be unaffected.
-
-- **open** Heading order: posts jump from the page `h1` straight to `###` (16 posts); fix by demoting/promoting headings in the posts or shifting levels in the layout.
-- **open** `empty-table-header` in the active-users post (pandas index column) and `link-in-text-block` in `sql-with` and `copright-law-ai` (links only distinguished by colour).
-- **open** `{:target="_blank"}` is used in some post bodies without `rel="noopener"`; modern browsers imply it, so low priority.
-- **open** The sitemap lists three `screencapture-fromlawtodata-*.pdf` files in `images/post-feature-photos/` (Phase 5 deletes them).
-- **decision** Email (`wardyryan1@gmail.com`) is rendered in plain text in the footer and nav; left as is at your request.
-
-- **open** Post images have no `width`/`height` attributes (markdown images), so the page can shift as they load; add per-image dimensions if it bothers you.
-- **open** `.git` is ~43 MB because old CatBoost docs live in history; rewriting history would shrink it but changes every commit hash. Not worth it unless you care.
+- **open** Heading order: posts jump from the page `h1` straight to `###` (16 posts). Deliberately left alone for now.
+- **open** `.git` is ~43 MB because old CatBoost docs live in history. Removing them needs a history rewrite and force-push (awaiting confirmation).
 - **open** `collections/_notebooks` (Jupyter sources for some posts) is excluded from the build; keep as source or move out of the repo.
+- **decision** Email (`wardyryan1@gmail.com`) is plain text in the footer and nav. Options if spam ever shows up: contact form (Formspree/Netlify), a `mailto:` built by JavaScript, or a forwarding alias on a custom domain.
+- **note** `/feed.xml` is now an Atom feed (jekyll-feed) instead of hand-written RSS 2.0; same URL, subscribers should be unaffected.
 
 ## Fixed
 - `baseurl` held a full URL, corrupting sitemap, robots.txt and canonical links.
 - Dead MathJax CDN replaced with MathJax 3; `mathjax: true` removed from posts without equations.
 - jQuery and Font Awesome CDN removed; icons are inline SVGs.
-- About-page screen "flicker" easter egg (`flicker.js`, `flicker: true`) removed; it was unintended. It had also been silently broken by a compression-related syntax error until Phase 1 accidentally revived it.
+- `flicker.js` (About page) had a latent syntax error caused by whitespace compression (missing semicolons); fixed and moved inside `<body>`.
 - Posts moved from `collections/_posts` to `_posts`; permalink changed to `/:year/:month/:day/:title/`, with `redirect_from` on every post for the old URL.
 - Stray `package.json` created in the repo root by the Playwright setup command was removed (Playwright lives in `~/.pw`).
 - Forecasting review date set to 2024-03-15 (matches filename); old 05-15 URLs redirect.
@@ -45,4 +32,8 @@ Running log of quirks found while modernising the site. Status: `open` (not yet 
 - Inline `<style>` blocks in footer, post layout and about page moved into SCSS; footer now wraps on narrow screens instead of overlapping.
 - Phase 5: removed dead `js/`, unused CSS, includes, layouts and logos, and the unreferenced `images/post-feature-photos/` (~7 MB incl. three PDFs); site images dropped from 9.8 MB to ~2.7 MB.
 - Largest images converted to WebP (heatmap 606 KB to 59 KB, man-up poster 424 KB to 55 KB, etc.); headshot resized to 500px wide (175 KB to 65 KB). All post images and the avatar are lazy-loaded via the post layout.
-- Notebook `2021-15-30-reading-text-with-python-and-tesseract.ipynb` renamed to `2021-05-30-...` (fixing the invalid month).
+- `categories` removed from all posts (nothing used them).
+- Parenting WIP post: dropped its unneeded `redirect_from`/`categories` (still untracked).
+- `images/` excluded from `sitemap.xml` (PDFs and images no longer listed).
+- Footnote back-links are underlined (contrast), empty pandas table headers get a screen-reader label; axe now reports only the heading-order item above.
+- No post body used `target="_blank"` without `rel="noopener"` after earlier fixes (only `index.md` did; fixed in Phase 4).

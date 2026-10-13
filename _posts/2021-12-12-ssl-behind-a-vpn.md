@@ -3,7 +3,6 @@ layout: post
 title: Dealing with SSL errors in Requests behind a VPN
 date: 2021-12-12
 description: As with most things, understanding the cause helps avoid headaches.
-categories: python security
 redirect_from:
   - /collections/python/security/2021/12/12/ssl-behind-a-vpn/
 ---

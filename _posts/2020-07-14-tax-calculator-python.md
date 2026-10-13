@@ -3,7 +3,6 @@ layout: post
 title: How to make a scalable tax calculator in Python
 date: 2020-07-14
 description: If else is rarely the best solution.
-categories: logic python
 redirect_from:
   - /collections/logic/python/2020/07/14/tax-calculator-python/
 ---

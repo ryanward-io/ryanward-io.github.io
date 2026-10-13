@@ -3,7 +3,6 @@ layout: post
 title: How to make a 100% stacked bar chart with Python
 date: 2020-07-25
 description: It can be tricky to make but very effective used correctly.
-categories: visualisation python
 redirect_from:
   - /collections/visualisation/python/2020/07/25/100pc-stacked-bar-chart-python/
 ---

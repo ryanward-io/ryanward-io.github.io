@@ -3,7 +3,6 @@ layout: post
 title: Geopandas beginner mistakes to learn from
 date: 2025-03-27
 description: Get these concepts right to avoid a ton of errors
-categories: geospatial
 redirect_from:
   - /collections/geospatial/2025/03/27/geopandas-tricks/
 ---

@@ -3,7 +3,6 @@ layout: post
 title: What is analysis?
 date: 2021-02-15
 description: Let's think a little more philosophically about this.
-categories: philosophy strategy
 redirect_from:
   - /collections/philosophy/strategy/2021/02/15/what-is-analysis/
 ---

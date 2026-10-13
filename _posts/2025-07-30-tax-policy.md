@@ -3,7 +3,6 @@ layout: post
 title: Tax Policy in 2025
 date: 2025-07-30
 description: Getting tax right is a path to continued prosperity
-categories: professional tax
 mathjax: true
 redirect_from:
   - /collections/professional/tax/2025/07/30/tax-policy/

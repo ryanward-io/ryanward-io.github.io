@@ -3,7 +3,6 @@ layout: post
 title: How tech is helping tackle sexual violence
 date: 2025-07-01
 description: Tools to help survivors (repost from 2019)
-categories: sexualassault
 redirect_from:
   - /collections/sexualassault/2025/07/01/sex-assault-tech/
 ---

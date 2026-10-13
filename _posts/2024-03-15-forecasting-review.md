@@ -3,7 +3,6 @@ layout: post
 title: A forecasting lit review
 date: 2024-03-15
 description: Likely outdated but maybe a good starting point 
-categories: forecasting
 redirect_from:
   - /collections/forecasting/2024/05/15/forecasting-review/
   - /2024/05/15/forecasting-review/

@@ -3,7 +3,6 @@ layout: post
 title: Exploring ethical eating
 date: 2022-11-29
 description: To be honest I'm still working out the kinks of my ethical eating.
-categories: ethics vegetarianism
 redirect_from:
   - /collections/ethics/vegetarianism/2022/11/29/further-ethical-eating/
 ---

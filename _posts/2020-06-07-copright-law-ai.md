@@ -3,7 +3,6 @@ layout: post
 title: Can copyright law deal with progress in artificial intelligence?
 date: 2020-06-07
 description: The potential is enormous but the legal framework is immature.
-categories: law artificial-intelligence
 redirect_from:
   - /collections/law/artificial-intelligence/2020/06/07/copright-law-ai/
 ---

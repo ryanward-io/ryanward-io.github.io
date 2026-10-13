@@ -3,7 +3,6 @@ layout: post
 title: Excel - Making a year-on-year chart with variance
 date: 2020-10-12
 description: Because all your analysis is useless if it can't be communicated.
-categories: visualisation excel
 redirect_from:
   - /collections/visualisation/excel/2020/10/12/yoy-variance-chart-excel/
 ---

@@ -3,7 +3,6 @@ layout: post
 title: The prime linguistic real estate of car
 date: 2025-09-12
 description: Why do kids learn car first?
-categories: linguistics
 redirect_from:
   - /collections/linguistics/2025/09/12/car-etymology/
 ---

@@ -3,7 +3,6 @@ layout: post
 title: My month of working remotely
 date: 2022-06-29
 description: Or why waking up at 5AM to work everyday was actually OK.
-categories: working travel
 redirect_from:
   - /collections/working/travel/2022/06/29/working-remotely/
 ---

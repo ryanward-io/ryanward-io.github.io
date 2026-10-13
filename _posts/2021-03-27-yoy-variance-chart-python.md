@@ -3,7 +3,6 @@ layout: post
 title: Python - Making a year-on-year chart with variance
 date: 2021-03-27
 description: Finale of the year-on-year trilogy.
-categories: visualisation python
 redirect_from:
   - /collections/visualisation/python/2021/03/27/yoy-variance-chart-python/
 ---

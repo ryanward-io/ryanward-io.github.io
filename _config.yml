@@ -63,6 +63,10 @@ exclude:
 # Default share image for jekyll-seo-tag (og:image / twitter:image)
 defaults:
   - scope:
+      path: "images"
+    values:
+      sitemap: false
+  - scope:
       path: ""
     values:
       image: /images/ryan.jpg

@@ -3,7 +3,6 @@ layout: post
 title: How to use NPS to make better business decisions
 date: 2020-06-20
 description: A holistic partnership between experience and statistics.
-categories: product journeymaps
 redirect_from:
   - /collections/product/journeymaps/2020/06/20/nps-in-business/
 ---

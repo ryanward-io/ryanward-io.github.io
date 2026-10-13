@@ -8,11 +8,7 @@
   <!-- Theme CSS -->
   <link rel="stylesheet" href="{{ '/css/junior.css' | relative_url }}" type="text/css" />
 
-  <!-- Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Muli:300,400,800"
-    rel="stylesheet"
-  />
+  <link rel="preload" href="{{ '/fonts/muli-latin.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin />
 
   <!-- MathJax -->
   {% if site.enable_mathjax or page.mathjax == true %}

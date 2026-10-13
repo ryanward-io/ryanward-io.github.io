@@ -5,7 +5,8 @@ title: Ryan Ward
 email: wardyryan1@gmail.com
 author: Ryan Ward
 description: "A place for my thoughts and ideas."
-baseurl: https://ryanward-io.github.io/
+url: https://ryanward-io.github.io
+baseurl: ""
 date_format: "%-d %b %Y"
 
 # Google services

@@ -2,7 +2,7 @@
 layout: post
 title: Which pull request method should I use with Git?
 date: 2022-05-04
-summary: It only takes a few PRs for this to all make sense.
+description: It only takes a few PRs for this to all make sense.
 categories: git
 redirect_from:
   - /collections/git/2022/05/04/git-pull-requests/

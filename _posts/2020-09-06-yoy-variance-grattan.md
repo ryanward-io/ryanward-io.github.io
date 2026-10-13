@@ -2,7 +2,7 @@
 layout: post
 title: An analysis of a great year-on-year COVID-19 chart with variance
 date: 2020-09-06
-summary: Really just me gushing over the Grattan Institute's work.
+description: Really just me gushing over the Grattan Institute's work.
 categories: visualisation grattan
 redirect_from:
   - /collections/visualisation/grattan/2020/09/06/yoy-variance-grattan/

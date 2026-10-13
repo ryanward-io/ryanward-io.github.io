@@ -2,7 +2,7 @@
 layout: post
 title: On ethical eating
 date: 2022-11-14
-summary: What you choose to eat matters.
+description: What you choose to eat matters.
 categories: ethics vegetarianism
 redirect_from:
   - /collections/ethics/vegetarianism/2022/11/14/on-ethical-eating/

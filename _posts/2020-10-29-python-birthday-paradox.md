@@ -2,7 +2,7 @@
 layout: post
 title: Simulating the birthday paradox in Python
 date: 2020-10-29
-summary: Simple problems benefit from simple solutions.
+description: Simple problems benefit from simple solutions.
 categories: python maths
 redirect_from:
   - /collections/python/maths/2020/10/29/python-birthday-paradox/

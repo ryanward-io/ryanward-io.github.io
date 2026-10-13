@@ -2,7 +2,7 @@
 layout: post
 title: If you don't use personas, you are the persona
 date: 2020-11-28
-summary: Talking to real other people goes a long way.
+description: Talking to real other people goes a long way.
 categories: product user-experience
 redirect_from:
   - /collections/product/user-experience/2020/11/28/use-personas/

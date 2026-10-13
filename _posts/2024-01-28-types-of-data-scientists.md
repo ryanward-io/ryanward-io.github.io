@@ -2,7 +2,7 @@
 layout: post
 title: The three subspecies of data scientist
 date: 2024-01-28
-summary: My take on some very different roles.
+description: My take on some very different roles.
 categories: data
 redirect_from:
   - /collections/data/2024/01/28/types-of-data-scientists/

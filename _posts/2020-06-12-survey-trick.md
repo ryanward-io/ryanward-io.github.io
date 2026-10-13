@@ -2,7 +2,7 @@
 layout: post
 title: One simple trick to improving your survey design
 date: 2020-06-12
-summary: Just think about how it is going to be used.
+description: Just think about how it is going to be used.
 categories: product visualisation
 redirect_from:
   - /collections/product/visualisation/2020/06/12/survey-trick/

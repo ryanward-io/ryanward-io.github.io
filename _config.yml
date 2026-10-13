@@ -5,16 +5,14 @@ title: Ryan Ward
 email: wardyryan1@gmail.com
 author: Ryan Ward
 description: "A place for my thoughts and ideas."
+lang: en
+locale: en_AU
 url: https://ryanward-io.github.io
 baseurl: ""
 date_format: "%-d %b %Y"
 
-# Google services
-google_verification:
-# Use either direct GA implementation or set up GTM account
-# - using both will skew your data (leave blank to not use at all)
-google_analytics:
-google_tag_manager:
+# Search console verification (rendered by jekyll-seo-tag when set)
+google_site_verification:
 
 ######################################
 ## Optional features                ##
@@ -80,3 +78,12 @@ exclude:
   - projects/README.md
   - node_modules
   - .github
+
+# Default share image for jekyll-seo-tag (og:image / twitter:image)
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /images/ryan.jpg
+      twitter:
+        card: summary

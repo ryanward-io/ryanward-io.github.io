@@ -2,7 +2,7 @@
 layout: post
 title: Calculating Active Users (DAU, MAU) from an event stream
 date: 2020-06-04
-summary: It's not going to improve until you measure the problem.
+description: It's not going to improve until you measure the problem.
 categories: product python
 redirect_from:
   - /collections/product/python/2020/06/04/active-users-from-event-stream/

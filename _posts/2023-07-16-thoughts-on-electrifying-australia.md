@@ -2,7 +2,7 @@
 layout: post
 title: On electrifying Australia
 date: 2023-07-16
-summary: We have to get to zero carbon emissions.
+description: We have to get to zero carbon emissions.
 categories: energy renewables
 redirect_from:
   - /collections/energy/renewables/2023/07/16/thoughts-on-electrifying-australia/

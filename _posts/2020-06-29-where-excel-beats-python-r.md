@@ -2,7 +2,7 @@
 layout: post
 title: Where Excel beats out Python/R
 date: 2020-06-29
-summary: The use cases do exist.
+description: The use cases do exist.
 categories: python excel
 redirect_from:
   - /collections/python/excel/2020/06/29/where-excel-beats-python-r/

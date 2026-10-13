@@ -5,7 +5,7 @@ Running log of quirks found while modernising the site. Status: `open` (not yet 
 ## Open / decisions
 - **open** Sass deprecations are silenced in `_config.yml` (theme uses `@import`, `darken()` and global builtins). Migrate to `@use`/`color.adjust` before Dart Sass 3.0 removes them.
 - **open** Heading order: posts jump from the page `h1` straight to `###` (16 posts). Deliberately left alone for now.
-- **open** `.git` is ~43 MB because old CatBoost docs live in history. Removing them needs a history rewrite and force-push (awaiting confirmation).
+- **decision** `.git` is ~46 MB (old CatBoost docs, portfolio images, post photos in history). Decided to leave history alone: rewriting needs a force-push and gains little.
 - **open** `collections/_notebooks` (Jupyter sources for some posts) is excluded from the build; keep as source or move out of the repo.
 - **decision** Email (`wardyryan1@gmail.com`) is plain text in the footer and nav. Options if spam ever shows up: contact form (Formspree/Netlify), a `mailto:` built by JavaScript, or a forwarding alias on a custom domain.
 - **note** `/feed.xml` is now an Atom feed (jekyll-feed) instead of hand-written RSS 2.0; same URL, subscribers should be unaffected.

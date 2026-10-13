@@ -1,0 +1,218 @@
+// Dark theme. Applied when the visitor chose it (html[data-theme="dark"]) or, with no
+// explicit choice, when the OS prefers dark. html[data-theme="light"] always wins.
+@use 'variables' as *;
+
+$d-bg: #14161a;
+$d-surface: #1c1f25; // code blocks
+$d-text: #e6e6e6;
+$d-muted: #a3a8b0;
+$d-border: #2e323a;
+$d-link: #6cb4ff;
+$d-link-hover: #a5d2ff;
+$d-underline: #24425e;
+$d-underline-hover: #356490;
+
+@mixin dark-theme {
+  // These two declarations apply to <html> itself
+  color-scheme: dark;
+  background-color: $d-bg;
+
+  body,
+  .posts .post,
+  .site-header,
+  #main-menu,
+  footer {
+    background-color: $d-bg;
+  }
+
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  li,
+  td,
+  th,
+  .post-link .post-title,
+  footer,
+  footer .footer-each a,
+  header,
+  #main-menu li > a,
+  .social-icons a {
+    color: $d-text;
+  }
+
+  a {
+    color: $d-link;
+  }
+
+  a:hover,
+  a:focus {
+    color: $d-link-hover;
+  }
+
+  // Blue vs light text is too close in dark mode; underline links in running text
+  p a,
+  li a {
+    text-decoration: underline;
+  }
+
+  .post-meta,
+  .meta,
+  .post-summary,
+  blockquote {
+    color: $d-muted;
+  }
+
+  blockquote {
+    background-color: transparent;
+    border-left-color: $d-muted;
+  }
+
+  .posts .post,
+  .post-footer,
+  .related-post-title {
+    border-bottom-color: $d-border;
+  }
+
+  // Underlined links inside post paragraphs
+  .post-article p a {
+    text-decoration: none;
+    color: $d-text !important;
+    border-bottom-color: $d-underline;
+    box-shadow: 0 -0.4em 0 $d-underline inset;
+  }
+
+  .post-article p a:hover,
+  .post-article p a:active,
+  .post-article p a:focus {
+    border-color: $d-underline-hover;
+    box-shadow: 0 -0.75em 0 $d-underline-hover inset;
+  }
+
+  .post-article p .reversefootnote,
+  .post-article p .reversefootnote:hover,
+  .post-article p .reversefootnote:active,
+  .post-article p .reversefootnote:focus {
+    box-shadow: none;
+  }
+
+  // Navigation + footer underlines
+  nav .nav-underline:before,
+  nav a:after {
+    border-bottom-color: $d-muted;
+  }
+
+  .footer-each span:before {
+    border-bottom-color: $d-text;
+  }
+
+  // Code
+  pre,
+  .highlight {
+    background-color: $d-surface;
+  }
+
+  code,
+  .highlighter-rouge {
+    color: $d-muted;
+    background-color: $d-surface;
+  }
+
+  pre code {
+    color: inherit;
+  }
+
+  pre a::before {
+    color: $d-muted;
+  }
+
+  .highlight .c,
+  .highlight .cs,
+  .highlight .cm,
+  .highlight .cp,
+  .highlight .c1 {
+    color: #8b949e;
+  }
+
+  .highlight .k,
+  .highlight .kc,
+  .highlight .kd,
+  .highlight .kn,
+  .highlight .kr,
+  .highlight .kt,
+  .highlight .kp {
+    color: #79b8ff;
+  }
+
+  .highlight .na,
+  .highlight .nb,
+  .highlight .nc,
+  .highlight .no,
+  .highlight .nd,
+  .highlight .ni,
+  .highlight .ne,
+  .highlight .nf,
+  .highlight .nl,
+  .highlight .nn,
+  .highlight .nx {
+    color: $d-text;
+  }
+
+  .highlight .mi,
+  .highlight .il {
+    color: #5ed67a;
+  }
+
+  .highlight .s,
+  .highlight .sb,
+  .highlight .sc,
+  .highlight .sd,
+  .highlight .s2,
+  .highlight .s3,
+  .highlight .sh,
+  .highlight .si,
+  .highlight .sx,
+  .highlight .sr,
+  .highlight .ss,
+  .highlight .s1 {
+    color: #ff9a7a;
+  }
+
+  // Tables
+  table,
+  th,
+  td,
+  tr {
+    border-color: #4a4f58;
+  }
+
+  // Charts and screenshots are mostly white-backed; tone them down and make
+  // transparent ones readable
+  .post-content img {
+    background-color: #fff;
+    filter: brightness(0.9);
+  }
+
+  // Theme toggle shows a sun in dark mode (click to go light)
+  .theme-toggle .icon-moon {
+    display: none;
+  }
+
+  .theme-toggle .icon-sun {
+    display: inline;
+  }
+}
+
+:root[data-theme="dark"] {
+  @include dark-theme;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    @include dark-theme;
+  }
+}

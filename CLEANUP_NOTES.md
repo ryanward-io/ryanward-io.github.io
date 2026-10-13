@@ -34,3 +34,5 @@ None.
 - No post body used `target="_blank"` without `rel="noopener"` after earlier fixes (only `index.md` did; fixed in Phase 4).
 - Sass migrated from `@import` to `@use` (partials `@use` variables with `as *`, `darken()` replaced by `color.adjust`); deprecation silencing removed. Compiled CSS is byte-identical before and after.
 - Heading order: in the 16 posts that jumped from the title `h1` to `###`, every body heading moved up one level (`###`→`##` etc.), and `.post-content h2` keeps the old h3 size so the look is unchanged. axe now reports no issues on any page.
+- Dark mode added (system preference plus a nav toggle that remembers the choice); axe-core is clean on every page in both themes.
+- Regression fixed: the post-body link highlight style had become global in Phase 4 and was also styling links on the home/about pages and the footer; it is now scoped to post bodies (`.post-article`).

@@ -25,3 +25,49 @@
   position: relative;
   top: 0.1em;
 }
+
+// Light/dark theme toggle (sits next to the social icons)
+.theme-toggle {
+  background: none;
+  border: 0;
+  padding: 0.2em;
+  margin: 0 0 0 0.4em;
+  font-size: 1.25rem;
+  line-height: 1;
+  color: inherit;
+  cursor: pointer;
+  opacity: 0.8;
+  vertical-align: middle;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  opacity: 1;
+}
+
+.theme-toggle svg {
+  display: block;
+}
+
+.theme-toggle .icon-sun {
+  display: none;
+}
+
+// Keep the nav on one row on phones now that there is a theme toggle
+@media only screen and (max-width: 600px) {
+  nav ul {
+    flex-wrap: wrap;
+  }
+
+  #main-menu li {
+    padding: 10px 6px;
+  }
+
+  .theme-toggle {
+    margin-left: 0;
+  }
+
+  .social-icons {
+    white-space: nowrap;
+  }
+}

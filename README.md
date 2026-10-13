@@ -21,6 +21,10 @@ Always use `bundle exec`; plain `jekyll` can pick up mismatched system gems.
 
 Add `_posts/YYYY-MM-DD-slug.md` with `layout: post`, `title`, `summary` (used for the social description) and optionally `mathjax: true` for equations (`$$...$$` or `\(...\)`). URLs are `/YYYY/MM/DD/slug/`.
 
+## Dark mode
+
+`_sass/_dark.scss` holds the dark theme. It follows the visitor's OS setting (`prefers-color-scheme`) until they use the sun/moon button in the nav, which saves an explicit `light` or `dark` choice in `localStorage` and sets `data-theme` on `<html>` (a small script in `_includes/head.html` applies it before first paint). New colours in light-mode SCSS need a matching override in `_dark.scss`.
+
 ## Deployment
 
 Pushing to `main` builds the site with GitHub Actions (`.github/workflows/pages.yml`) and deploys it to GitHub Pages. Other branches and pull requests only build, so you can check a change compiles before merging. Pages must be set to **Settings → Pages → Source: GitHub Actions**.

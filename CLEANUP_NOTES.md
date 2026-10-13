@@ -3,7 +3,6 @@
 Running log of quirks found while modernising the site. Status: `open` (not yet fixed), `fixed`, or `decision` (needs a call).
 
 ## Open / decisions
-- **open** Sass deprecations are silenced in `_config.yml` (theme uses `@import`, `darken()` and global builtins). Migrate to `@use`/`color.adjust` before Dart Sass 3.0 removes them.
 - **open** Heading order: posts jump from the page `h1` straight to `###` (16 posts). Deliberately left alone for now.
 - **decision** `.git` is ~46 MB (old CatBoost docs, portfolio images, post photos in history). Decided to leave history alone: rewriting needs a force-push and gains little.
 - **open** `collections/_notebooks` (Jupyter sources for some posts) is excluded from the build; keep as source or move out of the repo.
@@ -37,3 +36,4 @@ Running log of quirks found while modernising the site. Status: `open` (not yet 
 - `images/` excluded from `sitemap.xml` (PDFs and images no longer listed).
 - Footnote back-links are underlined (contrast), empty pandas table headers get a screen-reader label; axe now reports only the heading-order item above.
 - No post body used `target="_blank"` without `rel="noopener"` after earlier fixes (only `index.md` did; fixed in Phase 4).
+- Sass migrated from `@import` to `@use` (partials `@use` variables with `as *`, `darken()` replaced by `color.adjust`); deprecation silencing removed. Compiled CSS is byte-identical before and after.

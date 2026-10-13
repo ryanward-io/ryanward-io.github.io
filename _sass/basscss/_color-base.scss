@@ -1,5 +1,7 @@
 /* Basscss Color Base */
 
+@use '../variables' as *;
+
 body {
   color: $dark-gray;
   background-color: white;

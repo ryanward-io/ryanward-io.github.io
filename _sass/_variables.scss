@@ -1,3 +1,5 @@
+@use 'sass:color';
+
 // Typography
 $base-font-size: 14px !default;
 $bold-font-weight: bold !default;
@@ -58,7 +60,7 @@ $darken-4: rgba(#000, 0.5) !default;
 
 // Links
 $link-color: $blue;
-$link-hover-color: darken($blue, 40%);
+$link-hover-color: color.adjust($blue, $lightness: -40%);
 
 // Breakpoints
 $breakpoint-md: "(min-width: 52em)";

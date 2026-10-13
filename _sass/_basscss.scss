@@ -9,17 +9,17 @@
 
 */
 
-@import 'basscss/base-buttons';
-@import 'basscss/base-forms';
-@import 'basscss/base-reset';
-@import 'basscss/base-typography';
+@use 'basscss/base-buttons';
+@use 'basscss/base-forms';
+@use 'basscss/base-reset';
+@use 'basscss/base-typography';
 
-@import 'basscss/buttons-blue';
+@use 'basscss/buttons-blue';
 
-@import 'basscss/syntax-highlighting';
-@import 'basscss/color-base';
-@import 'basscss/colors';
+@use 'basscss/syntax-highlighting';
+@use 'basscss/color-base';
+@use 'basscss/colors';
 
-@import 'basscss/utility-headings';
-@import 'basscss/utility-typography';
-@import 'basscss/utility-white-space';
+@use 'basscss/utility-headings';
+@use 'basscss/utility-typography';
+@use 'basscss/utility-white-space';

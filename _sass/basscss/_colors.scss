@@ -1,5 +1,7 @@
 /* Basscss Colors */
 
+@use '../variables' as *;
+
 .dark-gray {
   color: $dark-gray;
 }

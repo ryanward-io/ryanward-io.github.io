@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 .site-header {
   background-color: $header-bg;
   z-index: 9999;

@@ -10,29 +10,29 @@
 * @license MIT
 */
 
-@import 'fonts';
+@use 'fonts';
 
-@import 'variables';
+@use 'variables';
 
-@import 'basscss';
+@use 'basscss';
 
-@import 'base';
+@use 'base';
 
-@import 'links';
-@import 'positions';
-@import 'clearfix';
-@import 'code';
-@import 'forms';
-@import 'typography';
-@import 'header';
-@import 'tables';
-@import 'animations';
-@import 'footer';
-@import 'social-icons';
-@import 'blockquotes';
-@import 'posts';
-@import 'media-queries';
-@import 'gists';
-@import 'measure';
-@import 'pagination';
-@import 'navigation';
+@use 'links';
+@use 'positions';
+@use 'clearfix';
+@use 'code';
+@use 'forms';
+@use 'typography';
+@use 'header';
+@use 'tables';
+@use 'animations';
+@use 'footer';
+@use 'social-icons';
+@use 'blockquotes';
+@use 'posts';
+@use 'media-queries';
+@use 'gists';
+@use 'measure';
+@use 'pagination';
+@use 'navigation';

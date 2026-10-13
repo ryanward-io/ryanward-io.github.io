@@ -1,5 +1,7 @@
 /* Basscss Utility Headings */
 
+@use '../variables' as *;
+
 .h00 {
   font-size: $h00;
 }

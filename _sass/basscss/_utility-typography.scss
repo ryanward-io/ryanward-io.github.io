@@ -1,5 +1,7 @@
 /* Basscss Utility Typography */
 
+@use '../variables' as *;
+
 .bold {
   font-weight: $bold-font-weight;
 }

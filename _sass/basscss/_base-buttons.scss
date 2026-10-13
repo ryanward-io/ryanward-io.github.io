@@ -1,5 +1,7 @@
 /* Basscss Base Buttons */
 
+@use '../variables' as *;
+
 button,
 .button {
   font-family: $button-font-family;

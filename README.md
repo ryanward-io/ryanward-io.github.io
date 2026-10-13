@@ -1,6 +1,6 @@
-# ryanward-io.github.io
+# ryanward.dev
 
-My website.
+My website, published at https://ryanward.dev (GitHub Pages; repo `ryanward-io/ryanward-io.github.io`).
 
 Gratefully derived from the [_Junior_](https://github.com/thundergolfer/junior-theme) theme as designed and developed by [@jonobelotti_IO](https://twitter.com/jonobelotti_IO), which in turn builds on [basscss](https://basscss.com).
 

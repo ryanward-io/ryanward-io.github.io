@@ -4,7 +4,6 @@ title: Solving for misogyny in young people
 date: 2025-07-01
 summary: Thinking long term rather than quick punishments (repost from 2019)
 categories: geospatial
-mathjax: true
 ---
 
 _Note: I originally wrote this for the Empowered Together blog, published 6 November 2019. This is just a transfer and no editing or rewriting has been done, so any specific content may be out of date or unreliable._

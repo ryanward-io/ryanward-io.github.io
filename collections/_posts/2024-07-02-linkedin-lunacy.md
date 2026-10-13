@@ -4,7 +4,6 @@ title: LinkedIn lunacy
 date: 2024-07-02
 summary: Or how to justify having a personal life to your colleagues
 categories: professional linkedin
-mathjax: true
 ---
 
 It is not enough to enjoy a hobby or take a break for leisure. If you aren't relating these experiences back to your work, what are you doing?

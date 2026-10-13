@@ -4,7 +4,6 @@ title: The prime linguistic real estate of car
 date: 2025-09-12
 summary: Why do kids learn car first?
 categories: linguistics
-mathjax: true
 ---
 
 I’ve got a toddler who’s almost three, and a baby not far behind. One of the first words my eldest picked up was *car*. This was encouraged by our maternal child health nurse as a nice, simple first word after *mum* and *dad*. A staple of picture books is also a shiny red car.

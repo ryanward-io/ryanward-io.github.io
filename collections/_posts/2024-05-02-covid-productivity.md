@@ -4,7 +4,6 @@ title: One of the best days
 date: 2024-05-02
 summary: A bit of structure through COVID
 categories: personal
-mathjax: true
 ---
 
 ### During the 2020 COVID lockdowns, my partner and I wanted a busy day.  

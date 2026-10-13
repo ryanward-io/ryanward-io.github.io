@@ -4,7 +4,6 @@ title: Which pull request method should I use with Git?
 date: 2022-05-04
 summary: It only takes a few PRs for this to all make sense.
 categories: git
-mathjax: true
 ---
 
 There are plenty of places explaining good practice for how to contribute code to a remote repository. However, I didn't see clearly when different approaches are appropriate.

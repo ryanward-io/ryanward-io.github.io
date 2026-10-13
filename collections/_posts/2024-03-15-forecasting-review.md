@@ -4,7 +4,6 @@ title: A forecasting lit review
 date: 2024-05-15
 summary: Likely outdated but maybe a good starting point 
 categories: forecasting
-mathjax: true
 ---
 
 # Forecasting literature review

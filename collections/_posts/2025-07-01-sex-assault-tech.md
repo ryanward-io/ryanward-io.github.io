@@ -4,7 +4,6 @@ title: How tech is helping tackle sexual violence
 date: 2025-07-01
 summary: Tools to help survivors (repost from 2019)
 categories: sexualassault
-mathjax: true
 ---
 
 _Note: I originally wrote this for the Empowered Together blog, published 5 May 2019. This is just a transfer and no editing or rewriting has been done, so any specific content may be out of date or unreliable._

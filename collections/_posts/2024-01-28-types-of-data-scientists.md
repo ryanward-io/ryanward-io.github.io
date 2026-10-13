@@ -4,7 +4,6 @@ title: The three subspecies of data scientist
 date: 2024-01-28
 summary: My take on some very different roles.
 categories: data
-mathjax: true
 ---
 
 I've been in the data game for a while now and this is what I've learnt about data scientists and what they actually *do*.

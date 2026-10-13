@@ -4,7 +4,6 @@ title: On electrifying Australia
 date: 2023-07-16
 summary: We have to get to zero carbon emissions.
 categories: energy renewables
-mathjax: true
 ---
 
 I recently reading Saul Griffith’s Quarterly Essay - The Wires That Bind.

@@ -4,7 +4,6 @@ title: Geopandas beginner mistakes to learn from
 date: 2025-03-27
 summary: Get these concepts right to avoid a ton of errors
 categories: geospatial
-mathjax: true
 ---
 
 GeoPandas has become my favourite tool for geospatial data manipulation in Python. However I encountered some pitfalls when starting out.

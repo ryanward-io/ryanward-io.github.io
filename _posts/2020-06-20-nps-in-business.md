@@ -72,7 +72,7 @@ It gets far more interesting when you dig down into the journey. This can help y
 Analysing your NPS data could show that NPS was -20 for Adding to ‘Cart’ with NPS comments saying that an annoying bug was dramatically reducing the UX when trying to purchase products.
 
 This gives extreme clarity on what the team should be focusing on improving, with a clear success measure defined – if the bug is fixed, you’d hypothesise that the NPS would increase closer to that of the Browsing Website and Checkout substages.
-!['Level 2 and beyond](/images/posts/2020-06-20-nps-in-business_files/npsimg2.webp)
+![Level 2 and beyond example](/images/posts/2020-06-20-nps-in-business_files/npsimg2.webp)
 
 Further layers may involve mapping individual features or Key Actions within products, segmentation by gender, age or geography, or simply reducing the reporting cadence from monthly to weekly.
 

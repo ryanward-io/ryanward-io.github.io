@@ -278,7 +278,7 @@ ax.set_ylim(0,1)
 plt.show()
 ```
 
-![png](/images/posts/2020-06-04-active-users-from-event-stream_files/2020-06-04-active-users-from-event-stream_11_0.png)
+![Line chart of DAU/MAU over time](/images/posts/2020-06-04-active-users-from-event-stream_files/2020-06-04-active-users-from-event-stream_11_0.png)
 
 You could clean this up further by removing the initial month (as it is finding it’s initial value in this time), changing the y-axis to a % and giving it a label, and perhaps using better date formatting but this is the crux of it.
 

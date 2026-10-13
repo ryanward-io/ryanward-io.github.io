@@ -19,7 +19,7 @@ This is part 2 in a series on year-on-year charts with variance. The others are:
 
 ### Collecting the data
 
-First start by getting some monthly data over multiple years. [Rainfall data from the Bureau of Meteorology](http://www.bom.gov.au/climate/cdo/about/cdo-rainfall-feature.shtml) will do – I take my readings from the station at the Melbourne Botanical Gardens, download the data and delete all rows before 2015. You can also get the [data here](https://raw.githubusercontent.com/ryanward-io/year-on-year-variance/main/IDCJAC0001_086232_Data.csv) if you don't want to stress about the formatting below.
+First start by getting some monthly data over multiple years. [Rainfall data from the Bureau of Meteorology](https://www.bom.gov.au/climate/cdo/about/cdo-rainfall-feature.shtml) will do – I take my readings from the station at the Melbourne Botanical Gardens, download the data and delete all rows before 2015. You can also get the [data here](https://raw.githubusercontent.com/ryanward-io/year-on-year-variance/main/IDCJAC0001_086232_Data.csv) if you don't want to stress about the formatting below.
 
 After downloading copy cells `C1:O1` and place them below your data (so on cell `C9:O9`), so all the chart information is together. You’ll also add four formulas being:
 
@@ -52,7 +52,7 @@ Highlight your data (from `C9:O13`) the go to the ribbon and click Insert, and R
 
 Just pick the line chart (second one for me). We’ll be editing this to turn it into exactly what we want.
 
-![png](/images/posts/2020-10-12-yoy-variance-chart-excel_files/excelimg1.webp)
+![Excel chart type picker with the line chart selected](/images/posts/2020-10-12-yoy-variance-chart-excel_files/excelimg1.webp)
 
 Now we’ve made the chart, we’ll instantly be changing it.
 
@@ -60,15 +60,15 @@ Right click the chart and choose ‘Change chart type’.
 
 Go to the bottom of the list and choose Combo. You want to choose ‘Line’ for the 2020 and 2015-2019 (average) data, and ‘Area’ for the MAX and MIN data. Press OK to see the new chart.
 
-![png](/images/posts/2020-10-12-yoy-variance-chart-excel_files/excelimg2.webp)
+![Excel Change Chart Type dialog with the Combo option, using lines for 2020 and the 2015-2019 average and areas for the max and min](/images/posts/2020-10-12-yoy-variance-chart-excel_files/excelimg2.webp)
 
 It’ll be a little ugly but we are getting somewhere.
 
-![png](/images/posts/2020-10-12-yoy-variance-chart-excel_files/excelimg3.webp)
+![Draft combo chart with the max and min areas still in default colours](/images/posts/2020-10-12-yoy-variance-chart-excel_files/excelimg3.webp)
 
 The key is now right clicking the MIN section (yellow for me) and changing the colour to white to give the chart negative space in that zone.
 
-![png](/images/posts/2020-10-12-yoy-variance-chart-excel_files/excelimg4.webp)
+![Chart with the min area recoloured white to leave negative space](/images/posts/2020-10-12-yoy-variance-chart-excel_files/excelimg4.webp)
 
 ### More formatting
 
@@ -85,6 +85,6 @@ While I’m here, I’ll change some more things such as:
 
 End result doesn’t look too bad!
 
-![png](/images/posts/2020-10-12-yoy-variance-chart-excel_files/excelimg5.webp)
+![Finished year-on-year variance chart in Excel](/images/posts/2020-10-12-yoy-variance-chart-excel_files/excelimg5.webp)
 
 Hope this helps you create charts that allow more insight into year-on-year analyses. Be creative and try different things.

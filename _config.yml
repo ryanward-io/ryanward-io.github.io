@@ -15,53 +15,23 @@ google_verification:
 # - using both will skew your data (leave blank to not use at all)
 google_analytics:
 google_tag_manager:
-# Bing services
-bing_verification:
 
 ######################################
 ## Optional features                ##
 ######################################
-animated: false
-show_related_posts: false
 show_post_footers: True
 show_social_icons: True
-ajaxify_contact_form: false
 enable_mathjax: false
-extended_fonts: false
-enable_anchorjs: false
 
 ###################################
 ## Social icons                  ##
 ###################################
 github_username: ryanward-io
-bitbucket_username:
-stackoverflow_id:
-twitter_username:
-skype_username:
-steam_nickname:
-google_plus_id:
 linkedin_username: ryanward4
-angellist_username:
-medium_id:
-youtube_channel_id:
-bitcoin_url:
-paypal_url:
-flattr_button:
 
 ###################################
 ## Post sharing icons            ##
 ###################################
-show_sharing_icons: True
-# Change to 'true' to enable individual icons
-share_facebook: True
-share_twitter: True
-share_googleplus: False
-share_linkedin: False
-share_digg: False
-share_tumblr: False
-share_reddit: True
-share_stumbleupon: False
-share_hackernews: True
 
 text:
   share_buttons:
@@ -89,13 +59,22 @@ text:
 markdown: kramdown
 kramdown:
   math_engine: ~
-redcarpet:
-  extensions: ["smart", "tables", "with_toc_data", "footnotes"]
 permalink: /:year/:month/:day/:title/
 sass:
-  compressed: true
+  style: compressed
 plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-redirect-from
-# https://github.com/jekyll/jekyll/issues/2938
-exclude: [vendor, CLEANUP_NOTES.md]
+exclude:
+  - vendor
+  - CLEANUP_NOTES.md
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - collections
+  - projects/README.md
+  - node_modules
+  - .github

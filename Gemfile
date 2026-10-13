@@ -1,6 +1,13 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-# A simple Ruby Gem to bootstrap dependencies for setting up and
-# maintaining a local Jekyll environment in sync with GitHub Pages
-# https://github.com/github/pages-gem
-gem 'github-pages'
+gem "jekyll", "~> 4.3"
+
+group :jekyll_plugins do
+  gem "jekyll-feed"
+  gem "jekyll-redirect-from"
+  gem "jekyll-seo-tag"
+  gem "jekyll-sitemap"
+end
+
+# Not bundled with Ruby 3+, needed for `jekyll serve`
+gem "webrick", "~> 1.8"

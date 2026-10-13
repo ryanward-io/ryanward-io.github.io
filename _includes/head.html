@@ -22,9 +22,6 @@
     {% if page.title %}{{ page.title | strip_html }} &#8211; {% endif %}{{
     site.title | strip_html }}
   </title>
-  <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com" />
-  <link rel="dns-prefetch" href="//cdn.mathjax.org" />
-  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
@@ -46,39 +43,23 @@
   <link rel="alternate" type="application/rss+xml" title="RSS Feed for {{
   site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl }}" />
 
-  <!-- JQuery # See if I can remove this in time-->
-  <script
-    aync
-    src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
-  ></script>
-
   <!-- Theme CSS -->
-  <link rel="stylesheet" href="{{ "{{ site.baseurl }}/css/junior.css"}}"
-  type="text/css">
+  <link rel="stylesheet" href="{{ '/css/junior.css' | prepend: site.baseurl }}" type="text/css" />
 
   <!-- Fonts -->
-  {% if site.extended_fonts %}
   <link
     href="https://fonts.googleapis.com/css?family=Muli:300,400,800"
     rel="stylesheet"
   />
-  {% else %}
-  <link
-    href="https://fonts.googleapis.com/css?family=Muli:300,400,800"
-    rel="stylesheet"
-  />
-  {% endif %} {% if site.show_social_icons or site.show_sharing_icons %}
-  <link
-    href="//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
-    rel="stylesheet"
-  />
-  {% endif %}
 
   <!-- MathJax -->
   {% if site.enable_mathjax or page.mathjax == true %}
+  <script>
+    window.MathJax = { tex: { inlineMath: [["\\(", "\\)"]], displayMath: [["$$", "$$"], ["\\[", "\\]"]] } };
+  </script>
   <script
-    type="text/javascript"
-    src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+    async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"
   ></script>
   {% endif %}
 

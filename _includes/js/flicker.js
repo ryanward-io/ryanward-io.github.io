@@ -22,20 +22,21 @@ Promise.prototype.delay = function (fn, t) {
 
 }
 
-function black() {
-  $(".site, .post, body").css({
-  '-webkit-filter': 'invert(1)',
-  'filter': 'invert(1)'
+function setInvert(v) {
+  document.querySelectorAll(".site, .post, body").forEach(function (el) {
+    el.style.webkitFilter = "invert(" + v + ")";
+    el.style.filter = "invert(" + v + ")";
   });
+}
+
+function black() {
+  setInvert(1);
 
   return this;
 }
 
 function white() {
-  $(".site, .post, body").css({
-  '-webkit-filter': 'invert(0)',
-  'filter': 'invert(0)'
-  });
+  setInvert(0);
 
   return this;
 }

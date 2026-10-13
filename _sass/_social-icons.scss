@@ -9,13 +9,15 @@
   width: 100%;
 }
 
-.social-icons a.fa {
+.social-icons a {
   cursor: pointer;
   opacity: 0.8;
   padding: 0.2em;
+  display: inline-block;
+  color: inherit;
 }
 
-.social-icons a.fa:hover {
+.social-icons a:hover {
   opacity: 1;
 }
 

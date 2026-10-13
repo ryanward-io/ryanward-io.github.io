@@ -87,6 +87,8 @@ text:
 ## Build settings                         ##
 ############################################
 markdown: kramdown
+kramdown:
+  math_engine: ~
 redcarpet:
   extensions: ["smart", "tables", "with_toc_data", "footnotes"]
 permalink: pretty

@@ -11,6 +11,10 @@ Running log of quirks found while modernising the site. Status: `open` (not yet 
 - **open** `categories` no longer affect URLs, only the keywords meta tag; consider dropping or switching to `tags`.
 - **open** Your WIP parenting post (`_posts/2025-11-10-parenting-and-social-media.md`) is untracked; its `redirect_from` points at the old `/collections/...` URL, which is harmless but unneeded since it was never published at that URL. Remove it before publishing.
 
+- **open** Local `bundle` runs Ruby 2.7 (`/usr/local/bin/bundle` has a `ruby2.7` shebang) even though `ruby -v` says 3.0.2, and neither has `ruby-dev`/headers for 3.0. Upgrade to a current Ruby (rbenv/ruby-build) when convenient, then drop the `jekyll-sass-converter` 2.x pin in `Gemfile` to move to Dart Sass.
+- **open** `.ruby-version` says 3.3 (CI) but local is 2.7.
+- **open** `/feed.xml` is now an Atom feed (jekyll-feed) instead of hand-written RSS 2.0; same URL, subscribers should be unaffected.
+
 ## Fixed
 - `baseurl` held a full URL, corrupting sitemap, robots.txt and canonical links.
 - Dead MathJax CDN replaced with MathJax 3; `mathjax: true` removed from posts without equations.
@@ -24,3 +28,5 @@ Running log of quirks found while modernising the site. Status: `open` (not yet 
 - Alt text added/fixed in the yoy-Excel, active-users and NPS posts.
 - `http://` links upgraded to `https://` in `esex-law` and the Excel post (except dead dailylife link).
 - `og:description` now falls back to the post `summary` (all posts have one), so no per-post `description` needed.
+- Moved to Jekyll 4.4 + GitHub Actions (build on every push/PR, deploy on `main`); removed the stale `github-pages` gem pin (Jekyll 3.9.2, 2022).
+- Removed dead config options (bing/animated/related posts/ajax contact form/anchorjs/extended fonts/unused social handles/share flags/redcarpet).

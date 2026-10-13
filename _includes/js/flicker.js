@@ -12,7 +12,7 @@ Promise.delay = function (fn, t) {
         fn = function () {};
     }
     return delay(t).then(fn);
-}
+};
 
 Promise.prototype.delay = function (fn, t) {
     /* return chained promise */
@@ -20,7 +20,7 @@ Promise.prototype.delay = function (fn, t) {
         return Promise.delay(fn, t);
     });
 
-}
+};
 
 function setInvert(v) {
   document.querySelectorAll(".site, .post, body").forEach(function (el) {
@@ -42,14 +42,14 @@ function white() {
 }
 
 function flicker() {
-  console.log("flicker")
+  console.log("flicker");
   Promise.delay(black, 1000).delay(white, 70).delay(black, 70).delay(white, 70).delay(black, 100).delay(white, 30000);
   console.log("finished");
 }
 
 (function(){
   /* The screen stays white for (Interval - (how long flicker() takes)). Here that's about 40 seconds. */
-  myInterval = setInterval( "flicker()", 70400 );
+  myInterval = setInterval(flicker, 70400);
 })();
 
 console.log("Hay");

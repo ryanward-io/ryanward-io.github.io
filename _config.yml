@@ -27,29 +27,10 @@ enable_mathjax: false
 github_username: ryanward-io
 linkedin_username: ryanward4
 
-###################################
-## Post sharing icons            ##
-###################################
-
 text:
-  share_buttons:
-    text: "Share this post!"
-    facebook: "Share on Facebook"
-    twitter: "Share on Twitter"
-    googleplus: "Share on Google+"
-    linkedin: "Share on LinkedIn"
-    digg: "Share on Digg"
-    tumblr: "Share on Tumblr"
-    reddit: "Share on Reddit"
-    stumbleupon: "Share on StumbleUpon"
-    hackernews: "Share on Hacker News"
   post:
     updated: "Updated"
     minute_read: "minute read"
-    related_posts: "Related Posts"
-  index:
-    coming_soon: "Coming soon..."
-  og_locale: "en_US"
 
 ############################################
 ## Build settings                         ##

@@ -91,10 +91,11 @@ kramdown:
   math_engine: ~
 redcarpet:
   extensions: ["smart", "tables", "with_toc_data", "footnotes"]
-permalink: pretty
+permalink: /:year/:month/:day/:title/
 sass:
   compressed: true
 plugins:
   - jekyll-sitemap
+  - jekyll-redirect-from
 # https://github.com/jekyll/jekyll/issues/2938
-exclude: [vendor]
+exclude: [vendor, CLEANUP_NOTES.md]

@@ -3,7 +3,6 @@
 Running log of quirks found while modernising the site. Status: `open` (not yet fixed), `fixed`, or `decision` (needs a call).
 
 ## Open / decisions
-- **open** `collections/_notebooks/2021-15-30-reading-text-with-python-and-tesseract.ipynb`: invalid month (15) in filename. The directory is unused by the build.
 - **open** Dead/unverified links in `2025-07-01-esex-law.md`: `dailylife.com.au` article no longer resolves (domain gone); `bom.gov.au` and `austlii.edu.au` links return 403 to bots so I couldn't verify them; the Palgrave link is a 2015 product page that now redirects somewhere generic. Consider archive.org links.
 - **open** The Excel post (`2020-10-12-yoy-variance-chart-excel.md`) alt text was written from the surrounding text, not from viewing the images; worth a glance.
 - **open** Post footer "Follow me on Github" link looks faintly styled (Phase 4 check).
@@ -46,3 +45,4 @@ Running log of quirks found while modernising the site. Status: `open` (not yet 
 - Inline `<style>` blocks in footer, post layout and about page moved into SCSS; footer now wraps on narrow screens instead of overlapping.
 - Phase 5: removed dead `js/`, unused CSS, includes, layouts and logos, and the unreferenced `images/post-feature-photos/` (~7 MB incl. three PDFs); site images dropped from 9.8 MB to ~2.7 MB.
 - Largest images converted to WebP (heatmap 606 KB to 59 KB, man-up poster 424 KB to 55 KB, etc.); headshot resized to 500px wide (175 KB to 65 KB). All post images and the avatar are lazy-loaded via the post layout.
+- Notebook `2021-15-30-reading-text-with-python-and-tesseract.ipynb` renamed to `2021-05-30-...` (fixing the invalid month).

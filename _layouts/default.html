@@ -14,6 +14,12 @@ layout: compress
     </div>
 
     {% include footer.html %}
+    <script>
+      /* Make horizontally scrolling code blocks keyboard-reachable */
+      document.querySelectorAll("pre").forEach(function (el) {
+        if (el.scrollWidth > el.clientWidth) el.tabIndex = 0;
+      });
+    </script>
     {% if page.flicker %}
     <script type="text/javascript">
       {% include js/flicker.js %}

@@ -14,6 +14,12 @@ Running log of quirks found while modernising the site. Status: `open` (not yet 
 - **open** Sass deprecations are silenced in `_config.yml` (theme uses `@import`, `darken()` and global builtins). Migrate to `@use`/`color.adjust` before Dart Sass 3.0 removes them.
 - **open** `/feed.xml` is now an Atom feed (jekyll-feed) instead of hand-written RSS 2.0; same URL, subscribers should be unaffected.
 
+- **open** Heading order: posts jump from the page `h1` straight to `###` (16 posts); fix by demoting/promoting headings in the posts or shifting levels in the layout.
+- **open** `empty-table-header` in the active-users post (pandas index column) and `link-in-text-block` in `sql-with` and `copright-law-ai` (links only distinguished by colour).
+- **open** `{:target="_blank"}` is used in some post bodies without `rel="noopener"`; modern browsers imply it, so low priority.
+- **open** The sitemap lists three `screencapture-fromlawtodata-*.pdf` files in `images/post-feature-photos/` (Phase 5 deletes them).
+- **decision** Email (`wardyryan1@gmail.com`) is rendered in plain text in the footer and nav; left as is at your request.
+
 ## Fixed
 - `baseurl` held a full URL, corrupting sitemap, robots.txt and canonical links.
 - Dead MathJax CDN replaced with MathJax 3; `mathjax: true` removed from posts without equations.
@@ -30,3 +36,7 @@ Running log of quirks found while modernising the site. Status: `open` (not yet 
 - Moved to Jekyll 4.4 + GitHub Actions (build on every push/PR, deploy on `main`); removed the stale `github-pages` gem pin (Jekyll 3.9.2, 2022).
 - Removed dead config options (bing/animated/related posts/ajax contact form/anchorjs/extended fonts/unused social handles/share flags/redcarpet).
 - Local Ruby upgraded to 3.3.12 via rbenv (matches CI); `jekyll-sass-converter` pin removed, so Dart Sass is used.
+- SEO: `{% seo %}` (jekyll-seo-tag) replaces hand-rolled meta tags: canonical, Open Graph, Twitter card, JSON-LD, default share image; `<html lang="en">`; post `summary` front matter renamed `description`.
+- Privacy: Muli font self-hosted (`/fonts`), no more Google Fonts requests; placeholder GA/GTM/Facebook snippets removed (re-add analytics deliberately if wanted).
+- Accessibility (axe-core sweep of every page): valid nav list markup with `aria-current`, working active nav state, footer link nesting and invalid `alt`, headshot/404 image alts, blog heading levels, colour contrast (post meta, code syntax colours), keyboard-focusable scrolling code blocks, PDF embed fallback.
+- Inline `<style>` blocks in footer, post layout and about page moved into SCSS; footer now wraps on narrow screens instead of overlapping.

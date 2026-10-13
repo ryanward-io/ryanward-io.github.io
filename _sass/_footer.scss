@@ -64,3 +64,104 @@ footer {
     margin: 0 auto;
     padding-top: 28px;
 }
+
+// Moved from inline <style> blocks in _includes/footer.html
+footer .desktop-footer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .client-each,
+  .footer-bar,
+  .section,
+  footer .desktop-footer {
+    max-width: 45.33563em;
+  }
+
+  footer {
+    margin-bottom: 30px;
+    visibility: visible;
+    -webkit-transform: translateY(0) scale(1);
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s,
+      opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+    transition: transform 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s,
+      opacity 0.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+  }
+
+  // Flex layout so the links wrap instead of overlapping on narrow screens
+  footer .desktop-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em 2.5em;
+  }
+
+  footer .desktop-footer .footer-each {
+    margin: 0;
+  }
+
+  footer .footer-each a {
+    text-decoration: none;
+    background-image: none;
+    color: #000;
+    font-weight: 300;
+    word-wrap: normal;
+  }
+
+  footer .footer-each a:active,
+  footer .footer-each a:hover {
+    outline-width: 0;
+  }
+
+  .founder-each h2,
+  .group-pic,
+  .header-title,
+  .home .contact-overlay .contact-a,
+  .section h1,
+  .section h2,
+  .section h3,
+  .section p,
+  .team small,
+  .title-div,
+  body .home .contact-overlay .contact-a-mob,
+  footer .desktop-footer .footer-each,
+  footer .mobile-footer,
+  footer .mobile-footer .footer-each,
+  nav li {
+    text-align: center;
+  }
+
+  .contact-a,
+  .contact-a span,
+  .contact-a-mob span,
+  .footer-each span,
+  footer,
+  sub,
+  sup {
+    position: relative;
+  }
+
+  .contact-a span:before,
+  .contact-a-mob span:before,
+  .footer-each span:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid #000;
+    transition: 0.4s;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+  .contact-a a:hover span:before,
+  .contact-a-mob a:hover span:before,
+  .footer-each a:hover span:before {
+    content: "";
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+  }

@@ -1,18 +1,16 @@
-<nav>
+{% assign here = page.url | remove: ".html" %}
+<nav aria-label="Main">
   <ul id="main-menu" data-nav-showing="false">
-  <div class="flexbox-parent">
-  {% for item in site.data.navigation %} 
+    {% for item in site.data.navigation %}
+    {% assign link_slash = item.link | append: "/" %}
     <li style="display: inline">
-      <a class="nav-underline" {% if page.url == item.link %}class="current"{% endif %} href="{{item.link}}">
-      {{ item.name }}
+      <a class="nav-underline{% if here == item.link or here == link_slash %} current{% endif %}" href="{{ item.link }}"{% if here == item.link or here == link_slash %} aria-current="page"{% endif %}>
+        {{ item.name }}
       </a>
     </li>
-  {% endfor %}
-  <li>
+    {% endfor %}
     {% if site.show_social_icons %}
-    {% include social_links.html %}
+    <li>{% include social_links.html %}</li>
     {% endif %}
-  </li>
-  </div>
   </ul>
 </nav>

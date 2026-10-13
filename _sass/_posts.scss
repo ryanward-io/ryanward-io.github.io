@@ -39,10 +39,41 @@
   font-weight: 300;
   margin: 0;
   padding: 0.25em 0;
-  color: #7a7a7a;
+  color: #666;
   font-style: italic;
 }
 
 .related-post-title {
   border-bottom: thin solid #f3f3f3;
+}
+
+// Moved from inline <style> in _layouts/post.html
+p a {
+    color: black !important;
+    text-decoration: none;
+    border-bottom: 0.0625em solid #dcf3ff;
+    box-shadow: 0 -0.4em 0 #dcf3ff inset;
+  }
+
+  p a:hover,
+  p a:active,
+  p a:focus {
+    border-color: #aedbf9;
+    box-shadow: 0 -0.75em 0 #aedbf9 inset;
+  }
+
+  p .reversefootnote {
+    border: none;
+    box-shadow: none;
+  }
+
+  p .reversefootnote:hover,
+  p .reversefootnote:active,
+  p .reversefootnote:focus {
+    border-color: none;
+    box-shadow: none;
+  }
+
+.about-header {
+  text-align: center;
 }

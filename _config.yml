@@ -62,6 +62,8 @@ kramdown:
 permalink: /:year/:month/:day/:title/
 sass:
   style: compressed
+  # Theme still uses @import and darken(); silence until migrated to @use/color.adjust
+  silence_deprecations: ["import", "color-functions", "global-builtin"]
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

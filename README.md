@@ -6,7 +6,7 @@ Gratefully derived from the [_Junior_](https://github.com/thundergolfer/junior-t
 
 ## Local development
 
-Needs Ruby 2.7+ and Bundler (CI uses Ruby 3.3). `Gemfile` pins `jekyll-sass-converter` 2.x (sassc) so it installs on older Rubies too.
+Needs Ruby 3.3 (see `.ruby-version`; install with rbenv) and Bundler.
 
 ```bash
 bundle config set --local path vendor/bundle   # optional: keep gems in the repo folder

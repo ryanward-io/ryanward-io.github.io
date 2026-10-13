@@ -3,7 +3,6 @@ layout: about
 title: About Me
 permalink: /about
 tags: about
-flicker: true
 headshot: /images/ryan.jpg
 ---
 

@@ -28,7 +28,7 @@ Running log of quirks found while modernising the site. Status: `open` (not yet 
 - `baseurl` held a full URL, corrupting sitemap, robots.txt and canonical links.
 - Dead MathJax CDN replaced with MathJax 3; `mathjax: true` removed from posts without equations.
 - jQuery and Font Awesome CDN removed; icons are inline SVGs.
-- `flicker.js` (About page) had a latent syntax error caused by whitespace compression (missing semicolons); fixed and moved inside `<body>`.
+- About-page screen "flicker" easter egg (`flicker.js`, `flicker: true`) removed; it was unintended. It had also been silently broken by a compression-related syntax error until Phase 1 accidentally revived it.
 - Posts moved from `collections/_posts` to `_posts`; permalink changed to `/:year/:month/:day/:title/`, with `redirect_from` on every post for the old URL.
 - Stray `package.json` created in the repo root by the Playwright setup command was removed (Playwright lives in `~/.pw`).
 - Forecasting review date set to 2024-03-15 (matches filename); old 05-15 URLs redirect.

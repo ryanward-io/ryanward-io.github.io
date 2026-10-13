@@ -11,7 +11,7 @@ _Thanks to my friend Hannah Nichols for helping with my thoughts around this. An
 
 ---
 
-### Why does Net Promoter Score (NPS) matter?
+## Why does Net Promoter Score (NPS) matter?
 
 NPS is one of many customer-focused metrics that reveals perceived experience by customers and works best when assessing customer loyalty. While this metric has its own fair share of promoters and detractors, it has come to dominate the world of customer experience (CX).
 
@@ -23,7 +23,7 @@ NPS can be categorised into three different types:
 
 Transactional NPS is the most actionable for a product team, especially when linking it to key points along the customer journey. Relationship NPS are the most actionable for customer teams, as it can help them prioritise the customers they reach out to.
 
-### So what is the problem and how will we solve it?
+## So what is the problem and how will we solve it?
 
 Companies generally want to record NPS to better measure their CX impact. Systematic measurement helps improve CX by pinpointing:
 
@@ -38,9 +38,9 @@ There are three key actions that will help you use NPS to improve CX:
 2. Map NPS to each point on the journey; and
 3. Collect more NPS data to get meaningful results, without fatiguing customers.
 
-### Developing a layered customer journey
+## Developing a layered customer journey
 
-#### Context
+### Context
 
 I’m not an expert in developing a customer journey map – just in applying data to those maps to make better decisions. Each company will be very different so use the customer journey map below as example to apply to your own context.
 
@@ -48,13 +48,13 @@ The core concept involves a multilayered journey that increases in resolution th
 
 You start at Level 1 – which are the broad stages a customer will go through to begin using your product. Level 2 would explore each of these stages, with even lower layers able to explore different products, features, key actions, and further minutiae. Lower layers can also be segmented by customer type, geography or anything else.
 
-#### Sample size is fundamental
+### Sample size is fundamental
 
 However, there is one rule of going deeper. You are always limited by the sample size you collect. If you only have 100 survey responses, you can’t go deeper than Level 1. If you have way more, say 10,000 responses, you could go down to Level 3 or 4 depending on how you construct your journey map.
 
 I may do another article on NPS statistics, but for now I’ll just say that 30 responses per section would be an absolute minimum (this would give you roughly a ± 10% error rate, which is still useful to see major issues) but ideally you could get up to 200 or so per section (which is closer to a ± 5% error rate). Either is OK – as long as you understand the limitations of the sample size you are working with.
 
-#### Level 1
+### Level 1
 
 The figure below shows that a customer goes through the stages of first being exposed to your product, to going through a purchase process, to getting value from the product over time. This is a bit SaaS-centric, but the same principles apply for any product and business model.
 
@@ -64,7 +64,7 @@ Given the sample size, this would be statistically significant enough to support
 ![Level 1 example](/images/posts/2020-06-20-nps-in-business_files/npsimg1.webp)
 Level 1 Example. A customer is first exposed to your product (Exposure), then goes through a purchase process (Purchase), and then gets value from your product over time (Service). This should be high-level but tailored to your organisation.
 
-#### Level 2 and beyond
+### Level 2 and beyond
 
 It gets far more interesting when you dig down into the journey. This can help you prioritise where exactly to focus in Purchase. Breaking Purchase into substages, you might have Browsing the Website, Adding items to a ‘Cart’, and Checkout.
 
@@ -77,7 +77,7 @@ Further layers may involve mapping individual features or Key Actions within pro
 
 CX resolution enhances with depth which provides better customer insights, allowing further improvements to the product. However, data is the raw fuel needed to support this interrogation (otherwise the margin of error gets too large) so data will always be the limiting factor for this type of CX exploration.
 
-### Next Steps
+## Next Steps
 
 Knowing all this, what do you do now? Well it depends on your starting point.
 

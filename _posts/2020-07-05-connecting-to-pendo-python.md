@@ -7,7 +7,7 @@ redirect_from:
   - /collections/product/python/2020/07/05/connecting-to-pendo-python/
 ---
 
-### When would this matter?
+## When would this matter?
 
 So you’ve developed your app/MVP, acquired customers and want to keep growing and bringing in new revenue.
 
@@ -19,7 +19,7 @@ The approach below can help specifically if you want to pull a full history of y
 
 While Pendo does have its [own API documentation](https://developers.pendo.io/docs/), I recently found myself needing to do a lot of extra engineering to pull all the data through into Power BI. Anyway – let’s get into it.
 
-### Importing libraries and defining variables
+## Importing libraries and defining variables
 
 Below we are importing all the libraries we’ll need and defining some variables we’ll use throughout our code.
 
@@ -45,7 +45,7 @@ headers = {
 url = "https://app.pendo.io/api/v1/aggregation"
 ```
 
-### Defining some useful utility functions
+## Defining some useful utility functions
 
 Below we’ll create two utility functions.
 
@@ -67,7 +67,7 @@ def day_delta(start_date_str):
     return day_delta
 ```
 
-### Defining the body of the API request
+## Defining the body of the API request
 
 Pendo has two types of records.
 
@@ -111,7 +111,7 @@ def data_body(source_name, dt):
     return payload
 ```
 
-### Define the API call and convert into a Dataframe
+## Define the API call and convert into a Dataframe
 
 Title says it all. Worth noting in this code if you are using a slightly older version of Pandas, you need to use `pd.io.json.json_normalize()` rather than `pd.json_normalize()`.
 
@@ -127,7 +127,7 @@ def API_response_into_df(source_name, start_date_ms):
         return None
 ```
 
-### Return all Pendo events and entities
+## Return all Pendo events and entities
 
 ```python
 def return_Pendo_events(source_name, start_date):
@@ -162,7 +162,7 @@ def return_Pendo_entities(source_name, cols_to_rename, cols_to_keep):
     return df_temp
 ```
 
-### Get lookup tables to return real names rather than Pendo IDs
+## Get lookup tables to return real names rather than Pendo IDs
 
 This gets you human-understandable names such as Dashboard rather than some arbitrary pageId string.
 
@@ -211,7 +211,7 @@ merge_table_list = [
 ]
 ```
 
-### Finally, run your code and get all the data
+## Finally, run your code and get all the data
 
 ```python
 def create_pendo_event_df(APIname, start_date=start_date, merge_table_list=merge_table_list):

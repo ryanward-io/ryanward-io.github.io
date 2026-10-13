@@ -11,7 +11,7 @@ For the past month I’ve been working from Europe, roughly 15,000km and 8 hours
 
 My partner and I have wanted to do a trip but finding a month to take off didn’t seem easy for us right now and who knows when it would be easier – so we decided lets try both making it work.
 
-### Organising the trip
+## Organising the trip
 
 We only decided to go about 2-3 weeks before we left. We figured out where we wanted to travel – Barcelona, Berlin and Amsterdam – and decided to stay roughly 9-10 days in each place. We chose a longer amount of time than we normally might as we figured if we were working through the mornings and only having afternoons to explore we’d want some more time in the city. We overshot by perhaps a day or two in each city but it really means you get time to explore the hidden gems which don’t hit the Top 5 Things lists so perhaps a blessing in disguise.
 
@@ -19,7 +19,7 @@ Planning up-front the cities and accomodation was also important, we didn’t wa
 
 Finally, its also critical your work is supportive. Fortunately my manager was happy that wasn’t an issue.
 
-### On the trip
+## On the trip
 
 As part of working I knew I wouldn’t get a full day crossover given the time zone difference but I wanted a partial intersection. To achieve this I told my work I’d be available from 2PM (home time) onwards which gave a solid 3 hours for standard business crossover. This was 6AM Europe time, some mornings a struggle but I’m an early riser so really not so bad. Fairly often I’d wake up around 5AM and just start working then. This worked well for me – getting all my meetings done in a few hours and then having from 9AM to ~2PM to work solidly without interruptions.
 

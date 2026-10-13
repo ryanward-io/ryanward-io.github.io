@@ -7,7 +7,7 @@ redirect_from:
   - /collections/logic/python/2020/07/14/tax-calculator-python/
 ---
 
-### Why do I need to calculate tax?
+## Why do I need to calculate tax?
 
 Calculating the tax or duty on items is a common requirement. Sometimes it is as simple as multiplying (almost) everything by 10% for a flat Value Added Tax like the Goods and Services Tax (GST). However, sometimes it is more complex and involves a sliding scale of tax based on the value of the good.
 

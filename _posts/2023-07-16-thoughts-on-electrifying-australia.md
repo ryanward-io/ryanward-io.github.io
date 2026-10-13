@@ -13,17 +13,17 @@ The possibilities of electrifying everything and decoupling ourselves from the u
 
 Helpfully, there were some statistics and I’m jotting down a few here for reference:
 
-### Residential electricity usage breakdown
+## Residential electricity usage breakdown
 - An average family might use about 15T CO2 in a year. To get this to 0 it is made up of:
   - About 20% goes by converting general electricity usage (lights, dishwasher, etc) to full renewables
   - Heating and cooktop is maybe another 20% when this is converted to electric and induction
   - Finally for an average household with two cars (at least one too many in my opinion) this accounts for 60% of remaining emissions if this is converted to renewable-powered electric vehicles.
 
-### Brief thoughts
+## Brief thoughts
 - **Cost to run:** Thinking about solar panels, financing it, and a depreciated cost and how that compares to paying for electricity over a time period like 5-10 years comes out preferably - perhaps $2000 a year with solar compared to ~$7000 a year with fossil fuels.
 - **Energy abundance:** Griffith talks about extremely cheap or free energy during peak periods. It’s interesting considering the market going further than this: energy so abundant people are paid to use it. What industries can be created when we have such an abundance of effectively free energy?
 
-### My take on decarbonisation and our relationship with cars
+## My take on decarbonisation and our relationship with cars
 The biggest emitter of CO2 in Australia is the burning of coal for electricity. The second biggest emitter is fuelling cars and trucks to move us and the things we own and buy around. It is a major area to solve in decarbonisation.
 
 Sure - replacing all cars with electric vehicles is the simplest answer but why not think a bit more revolutionarily than that.

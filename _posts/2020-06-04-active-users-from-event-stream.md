@@ -7,7 +7,7 @@ redirect_from:
   - /collections/product/python/2020/06/04/active-users-from-event-stream/
 ---
 
-### Background
+## Background
 
 A key product metric looks at Daily Active Users over Monthly Active Users (DAU/MAU). It is commonly used as a proxy for user engagement and is widely used by product teams and businesses. I’ve seen a few definitions but the one I use means that DAU, MAU, etc are defined as the count of unique visitors that have visited in the past X days – ie for MAU it is a rolling 30 days.
 
@@ -38,7 +38,7 @@ for d in dates:
         data.append([id, d, np.random.randint(1e2), np.random.randint(1e3)])
 ```
 
-### Code
+## Code
 
 Step 1 is housekeeping. While we'll use the generated data it would more likely connecting to an API or a database.
 

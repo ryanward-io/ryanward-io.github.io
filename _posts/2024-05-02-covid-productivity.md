@@ -7,7 +7,7 @@ redirect_from:
   - /collections/personal/2024/05/02/covid-productivity/
 ---
 
-### During the 2020 COVID lockdowns, my partner and I wanted a busy day.  
+## During the 2020 COVID lockdowns, my partner and I wanted a busy day.  
 
 It centred around one of the health-imposed rules - where you couldn't travel further than 5km from home except for exercise, groceries and health.  
 

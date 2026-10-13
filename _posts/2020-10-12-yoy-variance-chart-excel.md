@@ -16,20 +16,20 @@ This is part 2 in a series on year-on-year charts with variance. The others are:
 - [Analysing a year-on-year chart]({% post_url 2020-09-06-yoy-variance-grattan %})
 - [Making a year-on-year chart in Python]({% post_url 2021-03-27-yoy-variance-chart-python %})
 
-### Collecting the data
+## Collecting the data
 
 First start by getting some monthly data over multiple years. [Rainfall data from the Bureau of Meteorology](https://www.bom.gov.au/climate/cdo/about/cdo-rainfall-feature.shtml) will do – I take my readings from the station at the Melbourne Botanical Gardens, download the data and delete all rows before 2015. You can also get the [data here](https://raw.githubusercontent.com/ryanward-io/year-on-year-variance/main/IDCJAC0001_086232_Data.csv) if you don't want to stress about the formatting below.
 
 After downloading copy cells `C1:O1` and place them below your data (so on cell `C9:O9`), so all the chart information is together. You’ll also add four formulas being:
 
-#### First formula – adding 2020
+### First formula – adding 2020
 
 - In `C10` write 2020. This will be our 2020 year of data.
 - In `D10` write `=D$7` because we’ll be taking the 2020 values.
   - The dollar sign locks the formula onto row 7, so even if we were to copy these formulas down, it would still be referring to the right row. It is not strictly necessary here, but is good practice and Excel hygiene to avoid errors.
 - Then highlight `D10:O10` and press CTRL + R to copy the formula to all cells.
 
-#### Second formula – adding the average of years 2015-2019
+### Second formula – adding the average of years 2015-2019
 
 - In `C11` write 2015-2019 (average). This row will be the mean line for years 2015 through to 2019.
 - In `D11` write `=AVERAGE(D$2:D$6)` to take the mean of those cells.
@@ -37,13 +37,13 @@ After downloading copy cells `C1:O1` and place them below your data (so on cell 
   - No worries! The formula will ignore any cells that say blank because they are text fields and not numbers.
 - Like before highlight `D11:O11` and press CTRL + R to copy the formula to all cells.
 
-#### Third and fourth formulas – adding the maximum and minimum from years 2015-2019
+### Third and fourth formulas – adding the maximum and minimum from years 2015-2019
 
 - In `C12` write 2015-2019 (maximum). In `C13` write 2015-2019 (minimum). These will help create the area around the average line that proxies deviation from the mean.
 - In `D12` write `=MAX(D$2:D$6)` and in `D13` write `=MIN(D$2:D$6)`. These look similar but pull the minimum and maximum values from each month for the years of 2015 to 2019.
 - Now highlight both `D12:D13`, highlight to `O12:O13` and press CTRL + R to copy the formula to all cells.
 
-### Making the chart
+## Making the chart
 
 Perfect! We now have all the information we need to make our chart.
 
@@ -69,7 +69,7 @@ The key is now right clicking the MIN section (yellow for me) and changing the c
 
 ![Chart with the min area recoloured white to leave negative space](/images/posts/2020-10-12-yoy-variance-chart-excel_files/excelimg4.webp)
 
-### More formatting
+## More formatting
 
 While I’m here, I’ll change some more things such as:
 

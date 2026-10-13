@@ -11,7 +11,7 @@ With COVID-19 and lockdowns I’ve been enjoying getting more into [Settlers of 
 
 When playing, I can’t help but think of optimal strategy and I’ve been extremely interested in how Catan helps guide you towards the best strategy through its game design.
 
-### Why are two dice great in board games?
+## Why are two dice great in board games?
 
 With only one dice, you have a uniform distribution of random outputs. Your strategy here is simple – any decisions made have an equal chance (1 in 6 or 16.67% chance) of happening.
 
@@ -61,7 +61,7 @@ plt.show()
 
 ![Outcomes and distribution for two rolled dice](/images/posts/probability-accessibility-catan_files/probability-accessibility-catan_3_0.png)
 
-### OK cool – but why specifically call out Catan?
+## OK cool – but why specifically call out Catan?
 
 So we’ve talked a bit about the statistics. Now into Catan’s specific design.
 

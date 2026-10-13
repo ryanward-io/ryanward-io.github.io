@@ -11,7 +11,7 @@ I’ve recently had to tackle the issue of using Python’s Requests library to 
 
 I was surprised that while the problem was documented widely (e.g. here from [StackOverflow](https://stackoverflow.com/questions/10667960/python-requests-throwing-sslerror)), good solutions were hard to come by.
 
-### The problem
+## The problem
 
 An illustration of the problem might be:
 
@@ -37,7 +37,7 @@ The issue arises as a VPN essentially acts as a man-in-the-middle to any request
 
 Therefore an error is thrown as verification failed and the request never resolves.
 
-### How can we fix it?
+## How can we fix it?
 
 There are two options.
 

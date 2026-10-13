@@ -14,7 +14,7 @@ This is part 3 in a series on charting year-on-year variance. The others are:
 
 This is a brief tutorial on creating a year-on-year chart with variance in Python. This notebook is also in a [github repo here](https://github.com/ryanward-io/year-on-year-variance).
 
-### Starting with importing libraries and the data
+## Starting with importing libraries and the data
 
 ```python
 import pandas as pd
@@ -166,7 +166,7 @@ rainfall
 </table>
 </div>
 
-### Make 2015-19 average, min and max columns
+## Make 2015-19 average, min and max columns
 
 ```python
 yr_2015_2019_cols = [2015, 2016, 2017, 2018, 2019]
@@ -291,7 +291,7 @@ rainfall_yoy
 </table>
 </div>
 
-### Let’s check what it looks like out of the box
+## Let’s check what it looks like out of the box
 
 ```python
 plt.plot(rainfall_yoy)
@@ -301,7 +301,7 @@ plt.show()
 
 ![Confusing chart showing year-on-year information](/images/posts/2021-03-27-yoy-variance-chart-python_files/2021-03-27-yoy-variance-chart-python_5_0.png)
 
-### Plotting the nicer looking chart
+## Plotting the nicer looking chart
 
 ```python
 # data

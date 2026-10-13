@@ -1,3 +1,4 @@
+@use 'variables' as *;
 @use 'basscss';
 
 .posts {
@@ -89,4 +90,9 @@ p a {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
+}
+
+// Post section headings are h2 for a correct outline but keep the size they had as h3
+.post-content h2 {
+  font-size: $h3;
 }

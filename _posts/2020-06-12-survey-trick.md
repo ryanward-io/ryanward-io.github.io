@@ -7,7 +7,7 @@ redirect_from:
   - /collections/product/visualisation/2020/06/12/survey-trick/
 ---
 
-### Surveys are often poorly designed
+## Surveys are often poorly designed
 
 Surveys are a valuable tool to understand topics you might otherwise be unable to explore well. Best survey design is done by a specialist in this area, someone who properly understands the statistics and psychology of surveys. However, while not everyone can have a PhD in this area, anyone can still level up their skills, collect better data, and improve the experience for survey recipients.
 
@@ -23,7 +23,7 @@ I do see survey designers doing great things like test that the survey is functi
 
 My trick is a bit more subtle but I’ve seen dramatic results – and people don’t think of it because they don’t think like a data person.
 
-### Make a dummy data set
+## Make a dummy data set
 
 Making a dummy (fake) data set based on the questions you want to ask helps the designer and business visualise if they will actually get useful results or not. Very often a question seems valuable but looking at dummy results makes you realise it was actually biased or too rigid.
 

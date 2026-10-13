@@ -3,11 +3,7 @@
 Running log of quirks found while modernising the site. Status: `open` (not yet fixed), `fixed`, or `decision` (needs a call).
 
 ## Open / decisions
-- **open** Heading order: posts jump from the page `h1` straight to `###` (16 posts). Deliberately left alone for now.
-- **decision** `.git` is ~46 MB (old CatBoost docs, portfolio images, post photos in history). Decided to leave history alone: rewriting needs a force-push and gains little.
-- **open** `collections/_notebooks` (Jupyter sources for some posts) is excluded from the build; keep as source or move out of the repo.
-- **decision** Email (`wardyryan1@gmail.com`) is plain text in the footer and nav. Options if spam ever shows up: contact form (Formspree/Netlify), a `mailto:` built by JavaScript, or a forwarding alias on a custom domain.
-- **note** `/feed.xml` is now an Atom feed (jekyll-feed) instead of hand-written RSS 2.0; same URL, subscribers should be unaffected.
+None.
 
 ## Fixed
 - `baseurl` held a full URL, corrupting sitemap, robots.txt and canonical links.
@@ -37,3 +33,4 @@ Running log of quirks found while modernising the site. Status: `open` (not yet 
 - Footnote back-links are underlined (contrast), empty pandas table headers get a screen-reader label; axe now reports only the heading-order item above.
 - No post body used `target="_blank"` without `rel="noopener"` after earlier fixes (only `index.md` did; fixed in Phase 4).
 - Sass migrated from `@import` to `@use` (partials `@use` variables with `as *`, `darken()` replaced by `color.adjust`); deprecation silencing removed. Compiled CSS is byte-identical before and after.
+- Heading order: in the 16 posts that jumped from the title `h1` to `###`, every body heading moved up one level (`###`→`##` etc.), and `.post-content h2` keeps the old h3 size so the look is unchanged. axe now reports no issues on any page.

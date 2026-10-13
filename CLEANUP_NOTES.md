@@ -20,6 +20,10 @@ Running log of quirks found while modernising the site. Status: `open` (not yet 
 - **open** The sitemap lists three `screencapture-fromlawtodata-*.pdf` files in `images/post-feature-photos/` (Phase 5 deletes them).
 - **decision** Email (`wardyryan1@gmail.com`) is rendered in plain text in the footer and nav; left as is at your request.
 
+- **open** Post images have no `width`/`height` attributes (markdown images), so the page can shift as they load; add per-image dimensions if it bothers you.
+- **open** `.git` is ~43 MB because old CatBoost docs live in history; rewriting history would shrink it but changes every commit hash. Not worth it unless you care.
+- **open** `collections/_notebooks` (Jupyter sources for some posts) is excluded from the build; keep as source or move out of the repo.
+
 ## Fixed
 - `baseurl` held a full URL, corrupting sitemap, robots.txt and canonical links.
 - Dead MathJax CDN replaced with MathJax 3; `mathjax: true` removed from posts without equations.
@@ -40,3 +44,5 @@ Running log of quirks found while modernising the site. Status: `open` (not yet 
 - Privacy: Muli font self-hosted (`/fonts`), no more Google Fonts requests; placeholder GA/GTM/Facebook snippets removed (re-add analytics deliberately if wanted).
 - Accessibility (axe-core sweep of every page): valid nav list markup with `aria-current`, working active nav state, footer link nesting and invalid `alt`, headshot/404 image alts, blog heading levels, colour contrast (post meta, code syntax colours), keyboard-focusable scrolling code blocks, PDF embed fallback.
 - Inline `<style>` blocks in footer, post layout and about page moved into SCSS; footer now wraps on narrow screens instead of overlapping.
+- Phase 5: removed dead `js/`, unused CSS, includes, layouts and logos, and the unreferenced `images/post-feature-photos/` (~7 MB incl. three PDFs); site images dropped from 9.8 MB to ~2.7 MB.
+- Largest images converted to WebP (heatmap 606 KB to 59 KB, man-up poster 424 KB to 55 KB, etc.); headshot resized to 500px wide (175 KB to 65 KB). All post images and the avatar are lazy-loaded via the post layout.

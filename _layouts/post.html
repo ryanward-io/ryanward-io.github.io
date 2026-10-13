@@ -19,6 +19,8 @@ layout: default
   </span>
 </div>
 
-<article class="post-content">{{ content }}</article>
+<article class="post-content">
+  {{ content | replace: '<img ', '<img loading="lazy" decoding="async" ' }}
+</article>
 
 {% if site.show_post_footers %} {% include post_footer.html %} {% endif %}

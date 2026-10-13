@@ -33,4 +33,4 @@ Words aren’t neutral. I genuinely believe giving *car* such a privileged place
 
 At least I can try and do that for my two.
 
-![Kids playing in a safe street](/images/posts/2025-09-12-car-etymology/safe-streets2.jpg)
+![Kids playing in a safe street](/images/posts/2025-09-12-car-etymology/safe-streets2.webp)

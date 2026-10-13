@@ -18,7 +18,7 @@ With the increasing awareness of sexual violence as a widespread issue, more sol
 Platforms are appearing to make reporting of sexual violence easier and safer to address the underreporting of sexual assault. [https://https://www.projectcallisto.org/](Callisto) is a platform for the secure online reporting of any sexual violence. Available to over 160,000 US students over 13 colleges, sexual assault survivors can report safely, easily and securely through the platform. Callisto aims for a survivor-centred approach, giving them choice in what is done with the report so survivors can choose to send a record to the College, or only notify the school if another student names the same perpetrator. Callisto has found this increases the chances of reporting, and results in positive emotional and adjudicative outcomes, while also enabling colleges to detect repeat perpetrators. Potentially this could be rolled out further into professional environments, helping to deal with perpetrators of sexual assault and harassment in large companies. While not in Australia, there is a need for this here with sexual assault and harassment [https://humanrights.gov.au/our-work/sex-discrimination/publications/change-course-national-report-sexual-assault-and](a real problem) in Australian universities.
 
 
-![Statistical infographic showing Callisto users are 6 times more likely to report, 15% of repeat perpetrators are matched and users are 3 times more likely to seek support services](/images/posts/2025-07-01-sex-assault-tech/callisto_stats.png)
+![Statistical infographic showing Callisto users are 6 times more likely to report, 15% of repeat perpetrators are matched and users are 3 times more likely to seek support services](/images/posts/2025-07-01-sex-assault-tech/callisto_stats.webp)
 Figure 1: Statistics from the success of Callisto
 
 
@@ -29,7 +29,7 @@ Another innovation are chatbots that help people find information about support 
 ## Heatmaps of sexual violence
 Another method of using reporting to put the power back in the hands of survivors is the development of sexual violence heatmaps that allows people to identify and share public spaces where they feel uneasy, scared or assaulted, or alternatively spots where they feel safe, supported and happy. Free to Be was one of these heatmaps developed collaboratively with CrowdSpot and Monash University which developed a prototype with young women in Melbourne. Unfortunately, this doesn’t appear to have been continued after its initial start. However, these are others being made around the world with examples in Egypt, India, Greece and the UK.
 
-![Heatmap of Melbourne CBD showing community contributed spots of reported sexual harassment or assault](/images/posts/2025-07-01-sex-assault-tech/free_to_be_heatmap.png)
+![Heatmap of Melbourne CBD showing community contributed spots of reported sexual harassment or assault](/images/posts/2025-07-01-sex-assault-tech/free_to_be_heatmap.webp)
 Figure 2: Heatmap from the Melbourne Free to Be map showing reports of sexual assault or harassment across the city.
 
 

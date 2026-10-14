@@ -31,6 +31,10 @@ Pushing to `main` builds the site with GitHub Actions (`.github/workflows/pages.
 
 To roll back, `git revert` the bad commit and push.
 
+## Projects page
+
+`/projects/` (`projects/index.md`) renders the cards in `_data/projects.yml` (title, status, summary, tags, optional `demo`/`repo`/`post` links). It is deliberately hidden for now: no nav link, `noindex`, and excluded from the sitemap. To launch it, add `- name: Projects\n  link: /projects/` to `_data/navigation.yml` and remove `noindex: true` and `sitemap: false` from the page's front matter.
+
 ## Adding small projects
 
 Anything in a plain folder at the repo root without front matter is copied as-is, so a static demo placed in `projects/rag/` is served at `/projects/rag/`. For a project with a build step (Vite, etc.), keep its source in its own folder, add a step to the workflow that builds it and copies the output into `projects/<name>/` before the Jekyll build (there is a commented example), and the output is published alongside the blog. Demos that need a server must call an API hosted elsewhere, since GitHub Pages only serves static files.

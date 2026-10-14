@@ -1,0 +1,86 @@
+// /projects/ card grid
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.25rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+
+  header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.project-title {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+
+.project-status {
+  flex-shrink: 0;
+  padding: 0.1em 0.6em;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.6;
+  color: #444;
+}
+
+.project-status-live {
+  color: #0b6b2c;
+}
+
+.project-status-building {
+  color: #8a4b00;
+}
+
+.project-summary {
+  color: #333;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin: 0;
+    padding: 0.1em 0.6em;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 0.75rem;
+  }
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  margin-top: auto !important;
+  padding-top: 0.25rem;
+  font-size: 0.9rem;
+}

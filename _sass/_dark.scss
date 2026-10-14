@@ -197,6 +197,33 @@ $d-underline-hover: #356490;
     filter: brightness(0.9);
   }
 
+  // Project cards
+  .project-card {
+    background-color: $d-surface;
+    border-color: $d-border;
+  }
+
+  .project-status {
+    color: $d-muted;
+  }
+
+  .project-status-live {
+    color: #5ed67a;
+  }
+
+  .project-status-building {
+    color: #f0b25a;
+  }
+
+  .project-summary {
+    color: $d-text;
+  }
+
+  .project-tags li {
+    background-color: $d-border;
+    color: $d-text;
+  }
+
   // Theme toggle shows a sun in dark mode (click to go light)
   .theme-toggle .icon-moon {
     display: none;

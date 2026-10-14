@@ -1,0 +1,12 @@
+# Cards on /projects/. Status is one of: live, building, planned, archived.
+# Optional links: demo (live demo URL), repo (GitHub URL), post (blog post path).
+- title: Advertising spend explorer
+  status: archived
+  summary: A beginner-friendly regression walkthrough of the classic advertising dataset. Which channel should the next dollar go to, and how well can different models predict sales? Built with Streamlit in 2021.
+  tags: [regression, scikit-learn, Streamlit]
+  repo: https://github.com/ryanward-io/streamlit-advertising
+
+- title: LSTM forecasting
+  status: planned
+  summary: A small LSTM forecasting model trained offline and explored interactively in the browser.
+  tags: [deep learning, time series]

@@ -54,6 +54,7 @@ exclude:
   - README.md
   - LICENSE
   - collections
+  - scripts
   - projects/README.md
   - node_modules
   - .github

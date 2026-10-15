@@ -17,6 +17,17 @@ $d-underline-hover: #356490;
   color-scheme: dark;
   background-color: $d-bg;
 
+  // Roadtrip replay colours
+  --tr-fg: #{$d-text};
+  --tr-muted: #{$d-muted};
+  --tr-border: #{$d-border};
+  --tr-surface: #{$d-surface};
+  --tr-grid: #262a31;
+  --tr-drive: #6cb4ff;
+  --tr-charge: #5ed67a;
+  --tr-assumed: #f0b25a;
+  --tr-accent: #2563eb;
+
   body,
   .posts .post,
   .site-header,

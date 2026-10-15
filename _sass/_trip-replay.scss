@@ -1,0 +1,290 @@
+// Roadtrip replay (map + battery chart). Colours come from CSS variables so dark mode
+// only needs to override the variables (see _dark.scss).
+:root {
+  --tr-fg: #111;
+  --tr-muted: #555;
+  --tr-border: #d6d9de;
+  --tr-surface: #fff;
+  --tr-grid: #e3e5e9;
+  --tr-drive: #1a56db;
+  --tr-charge: #12803a;
+  --tr-assumed: #8a5a00;
+  --tr-accent: #1a56db;
+}
+
+.trip-replay {
+  margin: 1.75rem 0;
+  color: var(--tr-fg);
+  font-size: 0.95rem;
+
+  &.tr-loading {
+    padding: 2rem 0;
+    color: var(--tr-muted);
+  }
+}
+
+.tr-map {
+  height: min(62vh, 460px);
+  min-height: 280px;
+  border: 1px solid var(--tr-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tr-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0.75rem 0 0.5rem;
+}
+
+.tr-play {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  min-width: 6.5rem;
+  justify-content: center;
+  padding: 0.45em 0.9em;
+  border: 1px solid var(--tr-accent);
+  border-radius: 999px;
+  background: var(--tr-accent);
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.2;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+}
+
+.tr-scrub {
+  flex: 1;
+  min-width: 0;
+  accent-color: var(--tr-accent);
+}
+
+.tr-speed {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-shrink: 0;
+  font-size: 0.85rem;
+  color: var(--tr-muted);
+
+  select {
+    padding: 0.2em 0.3em;
+    border: 1px solid var(--tr-border);
+    border-radius: 4px;
+    background: var(--tr-surface);
+    color: var(--tr-fg);
+    font-size: 0.85rem;
+  }
+}
+
+.tr-readout {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: baseline;
+  gap: 0.25rem 1rem;
+  margin: 0.25rem 0 0.5rem;
+}
+
+.tr-time {
+  font-weight: 700;
+}
+
+.tr-status {
+  color: var(--tr-muted);
+}
+
+.tr-battery {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+
+.tr-chart-wrap {
+  width: 100%;
+}
+
+.tr-chart {
+  display: block;
+  width: 100%;
+  touch-action: pan-y;
+  cursor: ew-resize;
+  user-select: none;
+}
+
+.tr-grid {
+  stroke: var(--tr-grid);
+  stroke-width: 1;
+}
+
+.tr-day {
+  stroke: var(--tr-border);
+  stroke-width: 1;
+  stroke-dasharray: 2 4;
+}
+
+.tr-axis {
+  fill: var(--tr-muted);
+  font-size: 11px;
+}
+
+.tr-seg {
+  fill: none;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+}
+
+.tr-seg-drive {
+  stroke: var(--tr-drive);
+}
+
+.tr-seg-charge {
+  stroke: var(--tr-charge);
+  stroke-width: 4;
+}
+
+.tr-seg-assumed {
+  stroke: var(--tr-assumed);
+  stroke-width: 4;
+  stroke-dasharray: 5 4;
+}
+
+.tr-future {
+  opacity: 0.28;
+}
+
+.tr-chart-stop {
+  circle {
+    fill: var(--tr-surface);
+    stroke: var(--tr-charge);
+    stroke-width: 1.5;
+  }
+
+  text {
+    fill: var(--tr-fg);
+    font-size: 10px;
+    font-weight: 700;
+  }
+}
+
+.tr-cursor {
+  stroke: var(--tr-fg);
+  stroke-width: 1;
+  opacity: 0.6;
+}
+
+.tr-dot {
+  fill: var(--tr-surface);
+  stroke: var(--tr-fg);
+  stroke-width: 2.5;
+}
+
+.tr-note {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: var(--tr-muted);
+}
+
+.tr-assumptions {
+  font-size: 0.82rem;
+  color: var(--tr-muted);
+
+  summary {
+    cursor: pointer;
+    padding: 0.2rem 0;
+  }
+
+  ul {
+    margin: 0.25rem 0 0;
+    padding-left: 1.2rem;
+  }
+
+  li {
+    margin: 0.2rem 0;
+    color: var(--tr-muted);
+  }
+}
+
+// Map markers (these are DOM elements inside the MapLibre canvas container)
+.tr-stop {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #12803a;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+}
+
+.tr-stop-end {
+  background: #333;
+}
+
+.tr-car {
+  width: 18px;
+  height: 18px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  background: var(--tr-accent);
+  box-shadow: 0 0 0 0 rgba(26, 86, 219, 0.6), 0 1px 5px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .tr-car {
+    animation: tr-pulse 1.8s ease-out infinite;
+  }
+}
+
+@keyframes tr-pulse {
+  70% {
+    box-shadow: 0 0 0 12px rgba(26, 86, 219, 0), 0 1px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(26, 86, 219, 0), 0 1px 5px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.tr-popup {
+  color: #111;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+@media only screen and (max-width: 600px) {
+  .tr-controls {
+    flex-wrap: wrap;
+  }
+
+  .tr-scrub {
+    order: 3;
+    flex-basis: 100%;
+  }
+
+  .tr-speed {
+    margin-left: auto;
+  }
+
+  .tr-readout {
+    grid-template-columns: 1fr;
+    gap: 0.1rem;
+  }
+}
+
+// MapLibre's attribution box stays white in both themes, so keep its links dark enough to read
+.trip-replay .maplibregl-ctrl-attrib a {
+  color: #1a56db !important;
+}

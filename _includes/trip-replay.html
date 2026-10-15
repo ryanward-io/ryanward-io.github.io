@@ -1,0 +1,10 @@
+{% comment %}
+  Interactive map + battery chart. Usage: {% include trip-replay.html src="/assets/trips/<trip>/trip.json" %}
+  Data is built by scripts/build_trip.py. Map: MapLibre GL JS with OpenFreeMap tiles (no API key).
+{% endcomment %}
+<div class="trip-replay" data-src="{{ include.src | relative_url }}">
+  <noscript><p>This interactive map needs JavaScript. The charging stops are listed in the tables below.</p></noscript>
+</div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css" />
+<script src="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js" defer></script>
+<script src="{{ '/assets/trip-replay/trip-replay.js' | relative_url }}" defer></script>

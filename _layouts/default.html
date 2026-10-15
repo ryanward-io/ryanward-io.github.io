@@ -38,8 +38,8 @@ layout: compress
       })();
     </script>
     <script>
-      /* Make horizontally scrolling code blocks keyboard-reachable */
-      document.querySelectorAll("pre").forEach(function (el) {
+      /* Make horizontally scrolling code blocks and tables keyboard-reachable */
+      document.querySelectorAll("pre, .post-article table").forEach(function (el) {
         if (el.scrollWidth > el.clientWidth) el.tabIndex = 0;
       });
       /* Pandas tables have a blank index header; give it a screen-reader label */

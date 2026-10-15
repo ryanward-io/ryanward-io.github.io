@@ -43,3 +43,11 @@ table {
     border-top: 2px solid #111;
   }
 }
+
+// Wide tables scroll sideways inside the post instead of widening the whole page on phones
+.post-article table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+

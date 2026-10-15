@@ -52,7 +52,7 @@
     this.src = root.getAttribute("data-src");
     this.progress = 0;
     this.playing = false;
-    this.speed = 1;
+    this.speed = 2;
     this.lastFrame = 0;
     this.lastLegIndex = -2;
     this.doneBase = [];
@@ -153,7 +153,7 @@
     [["0.5", "0.5×"], ["1", "1×"], ["2", "2×"], ["4", "4×"]].forEach(function (o) {
       var opt = el("option", null, o[1]);
       opt.value = o[0];
-      if (o[0] === "1") opt.selected = true;
+      if (o[0] === "2") opt.selected = true;
       this.speedSel.appendChild(opt);
     }, this);
     speedLabel.appendChild(this.speedSel);

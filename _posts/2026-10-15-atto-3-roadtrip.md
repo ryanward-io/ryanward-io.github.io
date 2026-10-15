@@ -1,8 +1,8 @@
 ---
 layout: post
-title: A week roadtrip with two kids and an EV
+title: My roadtrip with an EV
 date: 2026-10-15
-description: It went way better than I'd expected
+description: went way better than I'd expected.
 ---
 
 From 23 to 27 September we drove our BYD Atto 3 from Melbourne to Bright, on to Canberra and back: almost 1,500km, a 50 kWh battery, and two kids under four. Charging took eight stops and totalled $177.32.

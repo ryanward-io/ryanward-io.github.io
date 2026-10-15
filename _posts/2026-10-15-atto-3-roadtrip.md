@@ -56,7 +56,7 @@ Questacon was fun!
 
 Three charges on the way back.
 
-Sunday meant three stops on the way home: Tarcutta, Wodonga West and Avenel. Avenel was the only annoying one. Four chargers, all busy, so I waited about 15 minutes. We'd arrived on about 10%, so there was no real choice but to chat with others waiting. It was the only time charging held us up, and the kids got out the colouring books and had a good time.
+Sunday meant three stops on the way home: Tarcutta, Wodonga West and Avenel. Avenel was the only annoying one. Four chargers, all busy, so I waited about 15 minutes. We'd arrived on about 10%, so there was no real choice but to chat with others waiting. It was the only time charging held us up, and the kids got out the colouring books and had a good time. We finally got to Melbourne on about 20%.
 
 ## Would I do it again?
 

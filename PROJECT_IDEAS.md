@@ -42,7 +42,8 @@ also holds working preferences.
 ### Bank transaction categoriser (live)
 - Repo https://github.com/ryanward-io/bank-transaction-categoriser, demo https://ryanward.dev/bank-transaction-categoriser/. Rebuild of the 2019 `bankclassifier` project
   as a scikit-learn pipeline in a stlite app: try-it box with examples, model/feature pickers, accuracy vs the "always guess Food" baseline, confusion matrix,
-  a "why the first version looked too good" section (97% with the original random row split vs about 83% scored on unseen descriptions) and a 15-combination comparison.
+  a small expander on why it scores unseen descriptions, and a 15-combination comparison. Ryan asked to **play down the history of the original's inflated split**
+  (keep that to one short note; don't write about the old repo's mistake in the app, README or cards).
 - Data: `data/transactions.csv` is a **sanitised** sample (description, category, count) produced by `tools/sanitise.py`; the raw file is not in the repo (see the decision log).
 
 ### LSTM forecasting (planned)

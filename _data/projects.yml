@@ -9,7 +9,7 @@
 
 - title: Bank transaction categoriser
   status: live
-  summary: Can a model learn spending categories from the text on a bank statement? A scikit-learn classifier with an honest evaluation, including why my first version's 97% accuracy was really about 83%.
+  summary: Can a model learn spending categories from the text on a bank statement? A scikit-learn classifier scored on descriptions it has never seen, with a model comparison and a confusion matrix.
   tags: [classification, scikit-learn, evaluation, stlite]
   demo: https://ryanward.dev/bank-transaction-categoriser/
   repo: https://github.com/ryanward-io/bank-transaction-categoriser

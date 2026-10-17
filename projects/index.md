@@ -3,8 +3,6 @@ layout: default
 title: Projects
 description: Small projects and demos by Ryan Ward.
 permalink: /projects/
-noindex: true
-sitemap: false
 ---
 
 <h1>Projects</h1>

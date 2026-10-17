@@ -7,7 +7,29 @@
   demo: https://ryanward.dev/advertising-spend-explorer/
   repo: https://github.com/ryanward-io/advertising-spend-explorer
 
+- title: Bank transaction categoriser
+  status: live
+  summary: Can a model learn spending categories from the text on a bank statement? A scikit-learn classifier with an honest evaluation, including why my first version's 97% accuracy was really about 83%.
+  tags: [classification, scikit-learn, evaluation, stlite]
+  demo: https://ryanward.dev/bank-transaction-categoriser/
+  repo: https://github.com/ryanward-io/bank-transaction-categoriser
+
 - title: LSTM forecasting
   status: planned
   summary: A small LSTM forecasting model trained offline and explored interactively in the browser.
   tags: [deep learning, time series]
+
+- title: Ask my blog
+  status: planned
+  summary: Ask questions about my posts and get answers with citations. Retrieval over the blog, a small serverless backend and a language model, with an evaluation set so you can see how well it works.
+  tags: [RAG, LLM, retrieval]
+
+- title: JEV decision model
+  status: planned
+  summary: Trying a fast, typed "System One" model for routing and classification, measured against a small language model on speed, cost and accuracy.
+  tags: [LLM, evaluation]
+
+- title: Agentic workflow
+  status: planned
+  summary: A replayable trace of an agent working through a multi-step task, so you can follow each tool call and decision.
+  tags: [agents, LLM]

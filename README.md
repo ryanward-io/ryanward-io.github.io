@@ -37,6 +37,20 @@ To roll back, `git revert` the bad commit and push.
 
 ## Projects page
 
+`/projects/` (`projects/index.md`) renders the cards in `_data/projects.yml` (title, status, summary, tags, optional `demo`/`repo`/`post` links). It is in the nav and the sitemap. Each project lives in its own repository; add a card (live ones first) when a project ships.
+
+## Trip replay (map + battery chart)
+
+A post can embed the animated trip with `{% include trip-replay.html src="/assets/trips/<trip>/trip.json" %}`. The data file is built by `scripts/build_trip.py` (charge sessions, stops, assumptions; roads come from the public OSRM demo server) and committed, so it only needs re-running when the data changes. The player is `assets/trip-replay/trip-replay.js` (MapLibre GL JS from jsDelivr, OpenFreeMap tiles, no API key); styles are in `_sass/_trip-replay.scss` and follow the light/dark theme.
+
+## Deployment
+
+Pushing to `main` builds the site with GitHub Actions (`.github/workflows/pages.yml`) and deploys it to GitHub Pages. Other branches and pull requests only build, so you can check a change compiles before merging. Pages must be set to **Settings → Pages → Source: GitHub Actions**.
+
+To roll back, `git revert` the bad commit and push.
+
+## Projects page
+
 `/projects/` (`projects/index.md`) renders the cards in `_data/projects.yml` (title, status, summary, tags, optional `demo`/`repo`/`post` links). It is deliberately hidden for now: no nav link, `noindex`, and excluded from the sitemap. To launch it, add `- name: Projects\n  link: /projects/` to `_data/navigation.yml` and remove `noindex: true` and `sitemap: false` from the page's front matter.
 
 ## Adding small projects

@@ -49,6 +49,7 @@ plugins:
 exclude:
   - vendor
   - CLEANUP_NOTES.md
+  - PROJECT_IDEAS.md
   - Gemfile
   - Gemfile.lock
   - README.md

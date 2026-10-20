@@ -69,8 +69,22 @@
    "features": -37,
    "fixesTip": "69.4 \u2192 58.0 a month; -17% vs early 2025",
    "featuresTip": "96.6 \u2192 60.8 a month; -9% vs early 2025"
+  },
+  {
+   "label": "dask",
+   "features": -72,
+   "featuresTip": "4.2 \u2192 1.2 a month; -55% vs early 2025",
+   "fixes": -44,
+   "fixesTip": "7.0 \u2192 3.9 a month; -52% vs early 2025"
+  },
+  {
+   "label": "LightGBM",
+   "features": -65,
+   "featuresTip": "2.2 \u2192 0.8 a month",
+   "fixes": -59,
+   "fixesTip": "2.6 \u2192 1.1 a month"
   }
  ],
- "note": "Items listed in each feature release's notes, divided by the months since the previous feature release. Hover for the change against early 2025, before coding agents. Unreleased pandas 3.1 and CPython 3.16 counted to 19 October.",
+ "note": "Items listed in each feature release's notes, divided by the months since the previous feature release. Hover for the change against early 2025, before coding agents. Unreleased pandas 3.1 and CPython 3.16 counted to 19 October. matplotlib, statsmodels, CatBoost and seaborn haven't had a release built mostly since October 2025; JAX's and XGBoost's notes weren't consistent enough to compare.",
  "xLabelShort": "% change per month"
 }

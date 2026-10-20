@@ -8,3 +8,6 @@ _site/
 vendor/
 
 *Zone.Identifier
+
+# Unpublished drafts and research notes: kept locally, never committed
+collections/_drafts/

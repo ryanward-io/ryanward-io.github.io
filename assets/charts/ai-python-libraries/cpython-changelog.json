@@ -16,118 +16,118 @@
  "data": [
   {
    "x": "2021Q1",
-   "fixes": 47,
+   "fixes": 55,
    "features": 39
   },
   {
    "x": "2021Q2",
-   "fixes": 53,
-   "features": 50
+   "fixes": 70,
+   "features": 45
   },
   {
    "x": "2021Q3",
-   "fixes": 62,
-   "features": 48
+   "fixes": 73,
+   "features": 51
   },
   {
    "x": "2021Q4",
-   "fixes": 67,
-   "features": 44
+   "fixes": 80,
+   "features": 39
   },
   {
    "x": "2022Q1",
-   "fixes": 70,
-   "features": 62
+   "fixes": 75,
+   "features": 66
   },
   {
    "x": "2022Q2",
-   "fixes": 80,
+   "fixes": 96,
    "features": 69
   },
   {
    "x": "2022Q3",
-   "fixes": 93,
-   "features": 39
+   "fixes": 107,
+   "features": 33
   },
   {
    "x": "2022Q4",
-   "fixes": 94,
-   "features": 38
+   "fixes": 103,
+   "features": 41
   },
   {
    "x": "2023Q1",
-   "fixes": 59,
-   "features": 46
+   "fixes": 71,
+   "features": 44
   },
   {
    "x": "2023Q2",
-   "fixes": 87,
-   "features": 61
+   "fixes": 92,
+   "features": 62
   },
   {
    "x": "2023Q3",
-   "fixes": 84,
+   "fixes": 92,
    "features": 55
   },
   {
    "x": "2023Q4",
-   "fixes": 89,
-   "features": 67
+   "fixes": 100,
+   "features": 68
   },
   {
    "x": "2024Q1",
-   "fixes": 83,
-   "features": 63
+   "fixes": 103,
+   "features": 62
   },
   {
    "x": "2024Q2",
-   "fixes": 101,
-   "features": 63
+   "fixes": 107,
+   "features": 64
   },
   {
    "x": "2024Q3",
-   "fixes": 84,
-   "features": 63
+   "fixes": 103,
+   "features": 59
   },
   {
    "x": "2024Q4",
-   "fixes": 107,
-   "features": 61
+   "fixes": 116,
+   "features": 55
   },
   {
    "x": "2025Q1",
-   "fixes": 88,
-   "features": 58
+   "fixes": 102,
+   "features": 59
   },
   {
    "x": "2025Q2",
-   "fixes": 116,
-   "features": 66
+   "fixes": 126,
+   "features": 69
   },
   {
    "x": "2025Q3",
-   "fixes": 82,
-   "features": 45
+   "fixes": 93,
+   "features": 49
   },
   {
    "x": "2025Q4",
-   "fixes": 108,
-   "features": 52
+   "fixes": 120,
+   "features": 55
   },
   {
    "x": "2026Q1",
-   "fixes": 110,
-   "features": 57
+   "fixes": 126,
+   "features": 56
   },
   {
    "x": "2026Q2",
-   "fixes": 144,
-   "features": 57
+   "fixes": 164,
+   "features": 62
   },
   {
    "x": "2026Q3",
-   "fixes": 147,
-   "features": 46
+   "fixes": 164,
+   "features": 48
   }
  ],
  "events": [
@@ -145,5 +145,5 @@
    "label": "Opus 4.6"
   }
  ],
- "note": "Entries in CPython's Misc/NEWS.d on the main branch, by the date each was written, sorted by wording ('Add...' vs 'Fix...'). About 45% are neither."
+ "note": "Entries in CPython's Misc/NEWS.d on the main branch, by the date each was written. Each is sorted by its section and wording into fixes, features, improvements, performance, removals, docs and maintenance; only fixes and features are shown. About 15% fit none of these."
 }

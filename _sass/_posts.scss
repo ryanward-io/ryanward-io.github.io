@@ -78,6 +78,22 @@
   box-shadow: none;
 }
 
+// Footnotes: set apart from the post with space and a thin rule
+.post-article .footnotes {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid $border-color;
+}
+
+.post-article .footnotes p,
+.post-article .footnotes li {
+  font-size: 0.875rem;
+}
+
+.post-article .footnotes li + li {
+  margin-top: 0.75rem;
+}
+
 .about-header {
   text-align: center;
 }

@@ -111,6 +111,10 @@ $d-underline-hover: #356490;
     box-shadow: none;
   }
 
+  .post-article .footnotes {
+    border-top-color: $d-border;
+  }
+
   // Navigation + footer underlines
   nav .nav-underline:before,
   nav a:after {

@@ -22,6 +22,13 @@
    "mergedTip": "342 \u2192 947 PRs"
   },
   {
+   "label": "XGBoost",
+   "opened": 137,
+   "merged": 91,
+   "openedTip": "127 \u2192 301 PRs",
+   "mergedTip": "115 \u2192 220 PRs"
+  },
+  {
    "label": "NumPy",
    "opened": 127,
    "merged": 112,
@@ -36,11 +43,25 @@
    "mergedTip": "243 \u2192 399 PRs"
   },
   {
+   "label": "dask",
+   "opened": 106,
+   "merged": -76,
+   "openedTip": "50 \u2192 103 PRs",
+   "mergedTip": "42 \u2192 10 PRs"
+  },
+  {
    "label": "CPython",
    "opened": 92,
    "merged": 79,
    "openedTip": "2,303 \u2192 4,428 PRs",
    "mergedTip": "1,872 \u2192 3,355 PRs"
+  },
+  {
+   "label": "LightGBM",
+   "opened": 80,
+   "merged": 17,
+   "openedTip": "54 \u2192 97 PRs",
+   "mergedTip": "41 \u2192 48 PRs"
   },
   {
    "label": "Polars",
@@ -69,8 +90,15 @@
    "merged": -32,
    "openedTip": "450 \u2192 482 PRs",
    "mergedTip": "295 \u2192 202 PRs"
+  },
+  {
+   "label": "JAX",
+   "opened": 0,
+   "merged": -8,
+   "openedTip": "2,033 \u2192 2,042 PRs",
+   "mergedTip": "1,637 \u2192 1,500 PRs"
   }
  ],
- "note": "GitHub search counts by creation date. PyTorch is left out because it lands code through a bot, so its PRs show as closed rather than merged.",
+ "note": "GitHub search counts by creation date. Not shown: PyTorch and CatBoost land code through a bot or an internal sync, so their PRs show as closed rather than merged; statsmodels (+838% opened, +935% merged, from a small base) would squash the scale; seaborn is dormant.",
  "xLabelShort": "% change on a year ago"
 }

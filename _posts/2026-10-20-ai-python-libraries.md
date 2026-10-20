@@ -27,14 +27,14 @@ Those lines only show AI that announces itself, but most agents don't.
 
 If agents made everyone twice as productive, you'd expect more of everything. That's not what the release notes say. Comparing releases built since October 2025 with releases built in 2022-24, per month of development:
 
-- **Features are flat.** It's a mixed bag - SciPy and PyTorch are shipping a bit more, NumPy, Polars and scikit-learn a bit less. Where features fell, most of the drop came in 2024, after big releases like NumPy 2.0 and Polars 1.0 and before coding agents took off.
-- **Fixes are up.** pandas is listing roughly three times as many bug fixes a month, PyTorch and scikit-learn about twice as many, and CPython 40% more.
+- **Features are flat.** It's a mixed bag - SciPy and PyTorch are shipping a bit more, NumPy, Polars and scikit-learn a bit less. Where features fell, most of the drop came in 2024, after big releases like NumPy 2.0 and Polars 1.0 and before agents took off.
+- **Fixes are up.** pandas is listing roughly three times as many bug fixes a month, PyTorch and scikit-learn about twice as many, and CPython nearly 40% more.
 
 Python's own changelog shows the split clearly:
 
 {% include chart.html src="/assets/charts/ai-python-libraries/cpython-changelog.json" %}
 
-New features have hovered between 40 and 70 a quarter for five years. Bug fixes crept up slowly, then jumped to about 145 a quarter in 2026. pandas 3.1 isn't even out yet and already lists 629 bug fixes.
+New features have hovered between 30 and 70 a quarter for five years. Bug fixes crept up slowly, then jumped to about 165 a quarter in mid-2026. pandas 3.1 isn't even out yet and already lists 629 bug fixes.
 
 Counting commits alone undersells this. Several projects aren't landing many more commits, but each one is bigger. NumPy landed 15% fewer commits this year but changed 52% more lines (some of that is one maintainer's typing overhaul), and PyTorch's typical commit grew from 36 lines to 54. A lot of the growth is tests, which you'd expect from agents that write a test with every fix.
 
@@ -50,7 +50,7 @@ That tracks with how I've seen agents work best. A maintainer who knows the code
 
 {% include chart.html src="/assets/charts/ai-python-libraries/prs.json" %}
 
-The other place output looks like it exploded is pull requests. CPython received 92% more in July to September than a year earlier, and NumPy and SciPy more than doubled. Merges didn't keep up everywhere, and the share closed without merging jumped - scikit-learn's went from about 20% to 46% at its peak.
+The other place output exploded is pull requests. CPython received 92% more in July to September than a year earlier, and NumPy and SciPy more than doubled. For most projects merges rose almost as fast: pandas merged 177% more, NumPy 112% more and CPython 79% more (in pandas, much of that is the core developer's own AI-assisted fixes). The exceptions are scikit-learn and transformers, where merges fell by about a quarter to a third, and dask, a largely dormant project that got twice as many PRs and merged just 10 of them. More got turned away too - the share of PRs closed without merging jumped at scikit-learn (from about 20% to 46% at its peak), matplotlib and NumPy.
 
 Maintainers have been blunt about it. scikit-learn's maintainers [wrote in February](https://probabl.substack.com/p/maintaining-open-source-in-the-age) that "at times almost every second issue on our main repo gets at least one such message", and that "a contribution should be worth more to the project than the time it takes to review it." Nearly every project here now has an AI policy, and several have an `AGENTS.md` file telling agents what not to do - pandas' tells them not to open pull requests at all. Early in 2026, matplotlib even had an autonomous agent [publish a blog post accusing a maintainer of "gatekeeping"](https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/) after its pull request was closed.
 
@@ -62,4 +62,9 @@ Bug backlogs used to grow and grow and grow. Nobody was fixing a five-year-old e
 
 I don't think we're far from agents alone doing the technical review, with a human only deciding whether a feature is worth having. The tricky part will be ensuring libraries don't malignantly grow with thousands of niche, low-value functions, bloating the API and making it painful to use. People can monkey-patch a method for their weird use case - that doesn't mean it needs to be a PR.
 
-[^method]: I ran a Claude Opus 5.5 agent to clone the repositories, gather pull-request and issue counts from GitHub, parse every release note and help create the charts. I wrote the content with Claude helping edit. The libraries are CPython, NumPy, SciPy, pandas, scikit-learn, matplotlib, PyTorch, CatBoost, XGBoost, LightGBM, Polars, Hugging Face transformers, JAX, statsmodels, seaborn and dask. **Commits** are on each main branch since 2019, excluding bots and merge commits; projects count commits differently, so each is only compared with itself. **AI credit** means a `Co-authored-by:` line naming Claude, Copilot, Cursor, Codex or Gemini, "Generated with Claude Code", or an agent account; Claude Code adds this by default and most other tools don't, so it undercounts AI use and skews towards Claude. **Release notes** are the features and fixes listed in each feature release, in each project's own format, divided by the months since the previous feature release; patch releases are left out because they mostly repeat fixes, and JAX's and XGBoost's notes weren't consistent enough to split. **Lines changed** covers source, tests and docs, leaving out lockfiles, vendored code, data files and commits over 5,000 lines. The **baseline** is 2022-24, after ChatGPT but before coding agents were widespread; 2026 isn't over, so it's compared per quarter or per month of development.
+[^method]: I ran a Claude Opus 5.5 agent to clone the repositories, gather pull-request and issue counts from GitHub, parse every release note and help create the charts. I wrote the content with Claude helping edit. The libraries are CPython, NumPy, SciPy, pandas, scikit-learn, matplotlib, PyTorch, CatBoost, XGBoost, LightGBM, Polars, Hugging Face transformers, JAX, statsmodels, seaborn and dask.
+
+    - **Commits:** each main branch since 2019, minus bots and merge commits. Projects count commits differently, so each is only compared with itself.
+    - **AI credit:** a `Co-authored-by:` line naming an AI tool, or an agent account. Claude Code adds one by default and most tools don't, so this undercounts and skews towards Claude.
+    - **Release notes:** features and fixes listed in each feature release, divided by the months since the one before. Patch releases are left out because they mostly repeat fixes.
+    - **Baseline:** 2022-24, after ChatGPT but before coding agents were widespread. 2026 isn't over, so it's compared per quarter or per month of development.

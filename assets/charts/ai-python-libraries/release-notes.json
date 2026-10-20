@@ -37,10 +37,10 @@
   },
   {
    "label": "CPython",
-   "fixes": 40,
-   "features": -5,
-   "fixesTip": "29.6 \u2192 41.5 a month",
-   "featuresTip": "19.4 \u2192 18.5 a month"
+   "fixes": 38,
+   "features": -1,
+   "fixesTip": "33.7 \u2192 46.5 a month",
+   "featuresTip": "19.2 \u2192 19.1 a month"
   },
   {
    "label": "SciPy",

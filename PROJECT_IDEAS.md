@@ -122,6 +122,11 @@ also holds working preferences.
 - Roadtrip post (`_posts/2026-10-15-atto-3-roadtrip.md`) has an interactive map plus battery chart (`_includes/trip-replay.html`,
   `assets/trip-replay/trip-replay.js`, data built by `scripts/build_trip.py`; MapLibre + OpenFreeMap tiles; defaults to 2x speed). A tightened draft
   of the post is in `collections/_drafts/2026-10-15-atto-3-roadtrip-tightened.md` (untracked, not built).
+- **Interactive charts (added 2026-10-20):** `{% include chart.html src="/assets/charts/<post>/<name>.json" %}` renders bar-over-time, two-line and
+  grouped-bar charts from a JSON spec (`assets/charts/chart.js`, styles inline in the include, light/dark aware, tooltips + data table). First used by
+  `_posts/2026-10-20-ai-python-libraries.md`; its data, scripts and long draft are in `collections/_drafts/ai-python-libraries-research/`.
+- Footnotes site-wide sit below a thin rule with smaller text (`_sass/_posts.scss`, dark border in `_sass/_dark.scss`).
+- `collections/_drafts/` is now in `.gitignore`.
 - Rollback tags exist on GitHub: `pre-phase-1` to `pre-phase-5`, `pre-sass-migration`, `pre-projects-page`, `pre-dark-mode`.
 - **Ryan's untracked work in progress:** `_posts/2025-11-10-parenting-and-social-media.md` and `collections/_drafts/`. Never stage or publish these.
 

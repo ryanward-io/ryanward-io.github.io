@@ -1,0 +1,76 @@
+{
+ "type": "hbar-grouped",
+ "title": "Release notes: change in fixes and features per month of development",
+ "xLabel": "% change, releases built since Oct 2025 vs releases built in 2022-24",
+ "format": "pct",
+ "series": [
+  {
+   "key": "fixes",
+   "name": "fixes"
+  },
+  {
+   "key": "features",
+   "name": "features"
+  }
+ ],
+ "data": [
+  {
+   "label": "pandas",
+   "fixes": 196,
+   "features": -32,
+   "fixesTip": "29.1 \u2192 86.2 a month; +598% vs early 2025",
+   "featuresTip": "7.1 \u2192 4.8 a month; +47% vs early 2025"
+  },
+  {
+   "label": "PyTorch",
+   "fixes": 104,
+   "features": 26,
+   "fixesTip": "53.5 \u2192 109.0 a month; +201% vs early 2025",
+   "featuresTip": "68.5 \u2192 86.6 a month; +90% vs early 2025"
+  },
+  {
+   "label": "scikit-learn",
+   "fixes": 84,
+   "features": -22,
+   "fixesTip": "6.1 \u2192 11.2 a month; +128% vs early 2025",
+   "featuresTip": "3.1 \u2192 2.4 a month; -32% vs early 2025"
+  },
+  {
+   "label": "CPython",
+   "fixes": 40,
+   "features": -5,
+   "fixesTip": "29.6 \u2192 41.5 a month",
+   "featuresTip": "19.4 \u2192 18.5 a month"
+  },
+  {
+   "label": "SciPy",
+   "fixes": 19,
+   "features": 12,
+   "fixesTip": "8.1 \u2192 9.6 a month; +57% vs early 2025",
+   "featuresTip": "17.3 \u2192 19.4 a month; +11% vs early 2025"
+  },
+  {
+   "label": "NumPy",
+   "fixes": -9,
+   "features": -26,
+   "fixesTip": "16.2 \u2192 14.6 a month; +4% vs early 2025",
+   "featuresTip": "8.3 \u2192 6.2 a month; -6% vs early 2025"
+  },
+  {
+   "label": "transformers",
+   "fixes": -13,
+   "features": 8,
+   "fixesTip": "100.0 \u2192 87.3 a month; +5% vs early 2025",
+   "featuresTip": "34.0 \u2192 36.9 a month; -18% vs early 2025"
+  },
+  {
+   "label": "Polars",
+   "fixes": -16,
+   "features": -37,
+   "fixesTip": "69.4 \u2192 58.0 a month; -17% vs early 2025",
+   "featuresTip": "96.6 \u2192 60.8 a month; -9% vs early 2025"
+  }
+ ],
+ "note": "Items listed in each feature release's notes, divided by the months since the previous feature release. Hover for the change against early 2025, before coding agents. Unreleased pandas 3.1 and CPython 3.16 counted to 19 October.",
+ "xLabelShort": "% change per month"
+}

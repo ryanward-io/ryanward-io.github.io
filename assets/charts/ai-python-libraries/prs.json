@@ -1,0 +1,76 @@
+{
+ "type": "hbar-grouped",
+ "title": "Pull requests opened and merged, Jul-Sep 2026 vs Jul-Sep 2025",
+ "xLabel": "% change year on year",
+ "format": "pct",
+ "series": [
+  {
+   "key": "opened",
+   "name": "opened"
+  },
+  {
+   "key": "merged",
+   "name": "merged"
+  }
+ ],
+ "data": [
+  {
+   "label": "pandas",
+   "opened": 154,
+   "merged": 177,
+   "openedTip": "552 \u2192 1,402 PRs",
+   "mergedTip": "342 \u2192 947 PRs"
+  },
+  {
+   "label": "NumPy",
+   "opened": 127,
+   "merged": 112,
+   "openedTip": "383 \u2192 871 PRs",
+   "mergedTip": "312 \u2192 663 PRs"
+  },
+  {
+   "label": "SciPy",
+   "opened": 119,
+   "merged": 64,
+   "openedTip": "276 \u2192 605 PRs",
+   "mergedTip": "243 \u2192 399 PRs"
+  },
+  {
+   "label": "CPython",
+   "opened": 92,
+   "merged": 79,
+   "openedTip": "2,303 \u2192 4,428 PRs",
+   "mergedTip": "1,872 \u2192 3,355 PRs"
+  },
+  {
+   "label": "Polars",
+   "opened": 41,
+   "merged": 26,
+   "openedTip": "739 \u2192 1,040 PRs",
+   "mergedTip": "606 \u2192 762 PRs"
+  },
+  {
+   "label": "matplotlib",
+   "opened": 25,
+   "merged": 8,
+   "openedTip": "270 \u2192 337 PRs",
+   "mergedTip": "213 \u2192 229 PRs"
+  },
+  {
+   "label": "transformers",
+   "opened": 11,
+   "merged": -22,
+   "openedTip": "1,578 \u2192 1,755 PRs",
+   "mergedTip": "1,125 \u2192 878 PRs"
+  },
+  {
+   "label": "scikit-learn",
+   "opened": 7,
+   "merged": -32,
+   "openedTip": "450 \u2192 482 PRs",
+   "mergedTip": "295 \u2192 202 PRs"
+  }
+ ],
+ "note": "GitHub search counts by creation date. PyTorch is left out because it lands code through a bot, so its PRs show as closed rather than merged.",
+ "xLabelShort": "% change on a year ago"
+}

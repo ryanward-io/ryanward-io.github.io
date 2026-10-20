@@ -1,0 +1,149 @@
+{
+ "type": "line",
+ "title": "CPython changelog entries per quarter",
+ "yLabel": "entries",
+ "unit": "entries",
+ "series": [
+  {
+   "key": "fixes",
+   "name": "bug fixes"
+  },
+  {
+   "key": "features",
+   "name": "new features"
+  }
+ ],
+ "data": [
+  {
+   "x": "2021Q1",
+   "fixes": 47,
+   "features": 39
+  },
+  {
+   "x": "2021Q2",
+   "fixes": 53,
+   "features": 50
+  },
+  {
+   "x": "2021Q3",
+   "fixes": 62,
+   "features": 48
+  },
+  {
+   "x": "2021Q4",
+   "fixes": 67,
+   "features": 44
+  },
+  {
+   "x": "2022Q1",
+   "fixes": 70,
+   "features": 62
+  },
+  {
+   "x": "2022Q2",
+   "fixes": 80,
+   "features": 69
+  },
+  {
+   "x": "2022Q3",
+   "fixes": 93,
+   "features": 39
+  },
+  {
+   "x": "2022Q4",
+   "fixes": 94,
+   "features": 38
+  },
+  {
+   "x": "2023Q1",
+   "fixes": 59,
+   "features": 46
+  },
+  {
+   "x": "2023Q2",
+   "fixes": 87,
+   "features": 61
+  },
+  {
+   "x": "2023Q3",
+   "fixes": 84,
+   "features": 55
+  },
+  {
+   "x": "2023Q4",
+   "fixes": 89,
+   "features": 67
+  },
+  {
+   "x": "2024Q1",
+   "fixes": 83,
+   "features": 63
+  },
+  {
+   "x": "2024Q2",
+   "fixes": 101,
+   "features": 63
+  },
+  {
+   "x": "2024Q3",
+   "fixes": 84,
+   "features": 63
+  },
+  {
+   "x": "2024Q4",
+   "fixes": 107,
+   "features": 61
+  },
+  {
+   "x": "2025Q1",
+   "fixes": 88,
+   "features": 58
+  },
+  {
+   "x": "2025Q2",
+   "fixes": 116,
+   "features": 66
+  },
+  {
+   "x": "2025Q3",
+   "fixes": 82,
+   "features": 45
+  },
+  {
+   "x": "2025Q4",
+   "fixes": 108,
+   "features": 52
+  },
+  {
+   "x": "2026Q1",
+   "fixes": 110,
+   "features": 57
+  },
+  {
+   "x": "2026Q2",
+   "fixes": 144,
+   "features": 57
+  },
+  {
+   "x": "2026Q3",
+   "fixes": 147,
+   "features": 46
+  }
+ ],
+ "events": [
+  {
+   "x": "2022Q4",
+   "label": "ChatGPT"
+  },
+  {
+   "x": "2025Q2",
+   "label": "Claude Code",
+   "key": true
+  },
+  {
+   "x": "2026Q1",
+   "label": "Opus 4.6"
+  }
+ ],
+ "note": "Entries in CPython's Misc/NEWS.d on the main branch, by the date each was written, sorted by wording ('Add...' vs 'Fix...'). About 45% are neither."
+}

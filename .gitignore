@@ -11,3 +11,6 @@ vendor/
 
 # Unpublished drafts and research notes: kept locally, never committed
 collections/_drafts/
+
+# Private planning notes: kept locally, never committed
+PROJECT_IDEAS.md

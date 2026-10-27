@@ -79,8 +79,39 @@
 .project-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem 1rem;
+  align-items: center;
+  gap: 0.6rem 1.1rem;
   margin-top: auto !important;
-  padding-top: 0.25rem;
+  padding-top: 0.5rem;
   font-size: 0.9rem;
+}
+
+// The main action: a filled button.
+.project-links a.project-demo {
+  padding: 0.45em 1em;
+  border-radius: 6px;
+  background-color: #0076df; // $blue (variables aren't loaded before this file)
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    background-color: #00369f;
+    color: #fff;
+  }
+}
+
+.project-links a.project-code {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  color: #333;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: #0076df;
+    text-decoration: underline;
+  }
 }

@@ -239,6 +239,28 @@ $d-underline-hover: #356490;
     color: $d-text;
   }
 
+  .project-links a.project-demo {
+    background-color: $d-link;
+    color: $d-bg;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      background-color: $d-link-hover;
+      color: $d-bg;
+    }
+  }
+
+  .project-links a.project-code {
+    color: $d-text;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $d-link;
+    }
+  }
+
   // Theme toggle shows a sun in dark mode (click to go light)
   .theme-toggle .icon-moon {
     display: none;

@@ -86,32 +86,52 @@
   font-size: 0.9rem;
 }
 
-// The main action: a filled button.
+// The main action: a large filled button. The code link is small, muted and pushed right.
 .project-links a.project-demo {
-  padding: 0.45em 1em;
-  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.6em 1.3em;
+  border-radius: 8px;
   background-color: #0076df; // $blue (variables aren't loaded before this file)
   color: #fff;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 700;
   text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0, 118, 223, 0.35);
+  transition: background-color 0.15s, transform 0.15s;
 
   &:hover,
   &:focus {
     background-color: #00369f;
     color: #fff;
+    transform: translateY(-1px);
   }
 }
 
 .project-links a.project-code {
   display: inline-flex;
   align-items: center;
-  gap: 0.35em;
-  color: #333;
+  gap: 0.5em;
+  margin-left: auto;
+  color: #666;
+  font-size: 0.85rem;
   text-decoration: none;
 
   &:hover,
   &:focus {
     color: #0076df;
     text-decoration: underline;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-links a.project-demo {
+    transition: none;
+
+    &:hover,
+    &:focus {
+      transform: none;
+    }
   }
 }

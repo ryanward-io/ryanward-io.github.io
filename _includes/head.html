@@ -16,7 +16,7 @@
   <link rel="alternate" type="application/atom+xml" title="Feed for {{ site.title }}" href="{{ '/feed.xml' | relative_url }}" />
 
   <!-- Theme CSS -->
-  <link rel="stylesheet" href="{{ '/css/junior.css' | relative_url }}" type="text/css" />
+  <link rel="stylesheet" href="{{ '/css/junior.css' | relative_url }}?v={{ site.time | date: '%s' }}" type="text/css" />
 
   <link rel="preload" href="{{ '/fonts/muli-latin.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin />
 

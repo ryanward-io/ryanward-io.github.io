@@ -243,6 +243,7 @@ $d-underline-hover: #356490;
     background-color: $d-link;
     color: $d-bg;
     text-decoration: none;
+    box-shadow: 0 2px 8px rgba(108, 180, 255, 0.25);
 
     &:hover,
     &:focus {
@@ -252,7 +253,7 @@ $d-underline-hover: #356490;
   }
 
   .project-links a.project-code {
-    color: $d-text;
+    color: $d-muted;
     text-decoration: none;
 
     &:hover,

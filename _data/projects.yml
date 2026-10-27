@@ -1,16 +1,24 @@
 # Cards on /projects/. Status is one of: live, building, planned, archived.
 # Optional links: demo (live demo URL), repo (GitHub URL), post (blog post path).
+# At most 3 tags per card.
+- title: Cluo Duo
+  status: live
+  summary: A free online Codenames Duet alternative. Play a co-operative word game with an AI partner, from GloVe word vectors with Bayesian reasoning up to large language models (coming soon), each one measured by self-play.
+  tags: [word vectors, Bayesian, LLM]
+  demo: https://ryanward.dev/cluo-duo/
+  repo: https://github.com/ryanward-io/cluo-duo
+
 - title: Advertising spend explorer
   status: live
   summary: An interactive regression walkthrough on the classic advertising dataset. Which channel should the next dollar go to, and how well can different models predict sales? Originally built in 2021; now Streamlit running entirely in your browser.
-  tags: [regression, scikit-learn, Streamlit, stlite]
+  tags: [regression, scikit-learn, Streamlit]
   demo: https://ryanward.dev/advertising-spend-explorer/
   repo: https://github.com/ryanward-io/advertising-spend-explorer
 
 - title: Bank transaction categoriser
   status: live
   summary: Can a model learn spending categories from the text on a bank statement? A scikit-learn classifier scored on descriptions it has never seen, with a model comparison and a confusion matrix.
-  tags: [classification, scikit-learn, evaluation, stlite]
+  tags: [classification, scikit-learn, Streamlit]
   demo: https://ryanward.dev/bank-transaction-categoriser/
   repo: https://github.com/ryanward-io/bank-transaction-categoriser
 

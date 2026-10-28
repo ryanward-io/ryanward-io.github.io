@@ -3,7 +3,7 @@
 # At most 3 tags per card.
 - title: Cluo Duo
   status: live
-  summary: A free online Codenames Duet alternative. Play a co-operative word game with an AI partner, from GloVe word vectors with Bayesian reasoning up to large language models (coming soon), each one measured by self-play.
+  summary: A free online Codenames Duet alternative. Play a co-operative word game with an AI partner, from GloVe word vectors with Bayesian reasoning up to an open large language model, Gemma 4, on its own GPU. Each partner is measured against the same reference player.
   tags: [word vectors, Bayesian, LLM]
   demo: https://ryanward.dev/cluo-duo/
   repo: https://github.com/ryanward-io/cluo-duo

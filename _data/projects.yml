@@ -10,8 +10,8 @@
 
 - title: Cluo Duo
   status: live
-  summary: A free online Codenames Duet alternative. Play a co-operative word game with an AI partner, from GloVe word vectors with Bayesian reasoning up to an open large language model, Gemma 4, on its own GPU. Each partner is measured against the same reference player.
-  tags: [word vectors, Bayesian, LLM]
+  summary: A free Codenames Duet alternative with an AI partner. Each partner is scored against the same reference player, and the open model Gemma 4 finds 11 of 15 agents on average, level with Claude Sonnet and ahead of GloVe word vectors (9).
+  tags: [LLM, evaluation, word vectors]
   demo: https://ryanward.dev/cluo-duo/
   repo: https://github.com/ryanward-io/cluo-duo
 

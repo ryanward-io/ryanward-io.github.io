@@ -262,6 +262,15 @@ $d-underline-hover: #356490;
     }
   }
 
+  // 404 page: swap to the dark GIF
+  .not-found-light {
+    display: none !important;
+  }
+
+  .not-found-dark {
+    display: block !important;
+  }
+
   // Theme toggle shows a sun in dark mode (click to go light)
   .theme-toggle .icon-moon {
     display: none;

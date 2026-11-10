@@ -3,28 +3,28 @@
 # At most 3 tags per card.
 - title: Melbourne Sweet Spot
   status: live
-  summary: Find the walkable pockets of Melbourne. Pick what's important to you, such as supermarkets, trains, parks, schools and gyms, and the map shows where you can walk to all of them, with suburb median prices.
+  summary: Find the walkable pockets of Melbourne, picking what's important to you.
   tags: [geospatial, network analysis, open data]
   demo: https://ryanward.dev/melbourne-sweet-spot/
   repo: https://github.com/ryanward-io/melbourne-sweet-spot
 
 - title: Cluo Duo
   status: live
-  summary: A free Codenames Duet alternative with an AI partner. Each partner is scored against the same reference player, and the open model Gemma 4 finds 11 of 15 agents on average, level with Claude Sonnet and ahead of GloVe word vectors (9).
+  summary: A free Codenames Duet alternative with an AI partner.
   tags: [LLM, evaluation, word vectors]
   demo: https://ryanward.dev/cluo-duo/
   repo: https://github.com/ryanward-io/cluo-duo
 
 - title: Advertising spend explorer
   status: live
-  summary: An interactive regression walkthrough on the classic advertising dataset. Which channel should the next dollar go to, and how well can different models predict sales? Originally built in 2021; now Streamlit running entirely in your browser.
+  summary: A simple interactive regression walkthrough on the classic advertising dataset. Originally built in 2021; now Streamlit running in your browser.
   tags: [regression, scikit-learn, Streamlit]
   demo: https://ryanward.dev/advertising-spend-explorer/
   repo: https://github.com/ryanward-io/advertising-spend-explorer
 
 - title: Bank transaction categoriser
   status: live
-  summary: Can a model learn spending categories from the text on a bank statement? A scikit-learn classifier scored on descriptions it has never seen, with a model comparison and a confusion matrix.
+  summary: A scikit-learn classifier learning spending categories from bank statements. Originally built in 2019; updated in 2026 and now Streamlit running in your browser.
   tags: [classification, scikit-learn, Streamlit]
   demo: https://ryanward.dev/bank-transaction-categoriser/
   repo: https://github.com/ryanward-io/bank-transaction-categoriser

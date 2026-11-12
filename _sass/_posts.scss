@@ -108,6 +108,24 @@
   white-space: nowrap;
 }
 
+// Skip link: hidden until focused by keyboard
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  z-index: 100;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  color: #000;
+  border: 2px solid currentColor;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+#main:focus {
+  outline: none;
+}
+
 // Post section headings are h2 for a correct outline but keep the size they had as h3
 .post-content h2 {
   font-size: $h3;

@@ -17,7 +17,7 @@ title: Blog
     {% for post in site.posts %}
     <div class="post py3">
       <p class="post-meta">
-        <span>{{ post.date | date: site.date_format }}</span>
+        <span>{% if post.original_date %}{{ post.original_date | date: site.date_format }} (reposted){% else %}{{ post.date | date: site.date_format }}{% endif %}</span>
       </p>
       <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"
         ><h2 class="post-title">{{ post.title }}</h2></a

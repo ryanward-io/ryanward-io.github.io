@@ -5,11 +5,11 @@ tags: home
 
 # Hi. I'm Ryan Ward
 
-**I'm a data scientist that loves solving problems, programming and going through new data.**
+**I'm a data scientist who loves solving problems, programming and going through new data.**
 
 **Currently, I'm experimenting with AI, writing, travelling with family, and raising my two kids.**
 
-I'm a trained lawyer, also hold a degree in Biomedical Science, and have an early career in corporate strategy. With this unusual background, I approach data and analytics with a unique perspective focused on the good it can do.
+I trained as a lawyer, studied Biomedical Science, and started my career in corporate strategy. With that mix behind me, I approach data and analytics with a unique perspective focused on the good it can do.
 
 My personal ethics guide what I choose to work on. My work should:
 

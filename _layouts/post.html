@@ -7,7 +7,11 @@ layout: default
 
 <div class="post-header mb2">
   <h1>{{ page.title }}</h1>
+  {% if page.original_date %}
+  <span class="post-meta">{{ page.original_date | date: site.date_format }} (reposted {{ page.date | date: site.date_format }})</span><br />
+  {% else %}
   <span class="post-meta">{{ page.date | date: site.date_format }}</span><br />
+  {% endif %}
   {% if page.update_date %}
   <span class="post-meta">
     {{ site.text.post.updated }}: {{ page.update_date | date: site.date_format}} </span

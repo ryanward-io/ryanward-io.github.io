@@ -6,9 +6,10 @@ layout: compress
 <html lang="{{ site.lang | default: 'en' }}">
   {% include head.html %}
   <body class="site">
+    <a class="skip-link" href="#main">Skip to content</a>
     {% include header.html %}
     <div class="site-wrap">
-      <div class="post p2 p-responsive wrap" role="main">
+      <div class="post p2 p-responsive wrap" role="main" id="main" tabindex="-1">
         <div class="measure">{{ content }}</div>
       </div>
     </div>

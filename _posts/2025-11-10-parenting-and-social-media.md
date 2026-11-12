@@ -2,7 +2,7 @@
 layout: post
 title: Why I don't share pictures of my kids on social media
 date: 2025-11-10
-description: And I think you reconsider it too
+description: And I think you should reconsider it too
 mathjax: true
 ---
 

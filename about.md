@@ -4,6 +4,7 @@ title: About Me
 permalink: /about
 tags: about
 headshot: /images/ryan.jpg
+description: "Ryan Ward is a Melbourne data scientist, trained lawyer and volunteer. A bit about where he grew up, his work and what he does outside it."
 ---
 
 I was born in the shadow of the Blue Mountains of Sydney before moving further in to the Hills Shire when I was about 4 before moving to Melbourne when I was about 13. Been here ever since and loved it growing up here, although I wouldn't say no to more density and walkability.

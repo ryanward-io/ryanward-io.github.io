@@ -3,7 +3,7 @@
 # At most 3 tags per card.
 - title: Melbourne Sweet Spot
   status: live
-  summary: Find the walkable pockets of Melbourne, picking what's important to you.
+  summary: Find the walkable pockets of Melbourne, based on what matters to you.
   tags: [geospatial, network analysis, open data]
   demo: https://ryanward.dev/melbourne-sweet-spot/
   repo: https://github.com/ryanward-io/melbourne-sweet-spot
